@@ -1,26 +1,36 @@
 function Footer() {
 	return (
 		<div className="justify-center m-10">
-			<ul className="flex flex-col md:flex-row items-center md:justify-evenly footerTopic leading-8">
+			<ul className="flex flex-col md:flex-row md:justify-evenly footerTopic leading-8">
 				<li className="mb-5">
-					<div class="text-xl uppercase font-bold mb-2"> Explore</div>
-					<ul>
+					<div class="text-xl uppercase quicks font-extrabold inline-block">
+						Explore
+						<div class="brdr50"></div>
+					</div>
+					<ul className="mt-3">
 						<li>About Us</li>
 						<li>Testimony</li>
 						<li>Portfolio</li>
 					</ul>
 				</li>
 				<li className="mb-5">
-					<div class="text-xl uppercase font-bold mb-2">Services</div>
-					<ul>
-						<li>Briday makeup</li>
-						<li>Groom Makeup</li>
-						<li>Eye lashes</li>
+					<div class="text-xl uppercase quicks font-extrabold inline-block">
+						Services
+						<div class="brdr50"></div>
+					</div>
+					<ul className="mt-3">
+						<li>Bridal makeup</li>
+						<li>Party makeup</li>
+						<li>Pre Wedding Makeup</li>
+						<li>Post Wedding Makeup</li>
 					</ul>
 				</li>
 				<li className="mb-5">
-					<div class="text-xl uppercase font-bold mb-2">Get in Touch</div>
-					<ul>
+					<div class="text-xl uppercase quicks font-extrabold inline-block">
+						Get in Touch
+						<div class="brdr50"></div>
+					</div>
+					<ul className="mt-3">
 						<li>Email</li>
 						<li>Instagram</li>
 						<li>Mobile</li>
