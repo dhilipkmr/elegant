@@ -33,7 +33,7 @@ export default function Home() {
       </Head>
       <NavBar />
       {/* <HeroCarousel nextSlide={nextSlide} previousSlide={previousSlide}/> */}
-      <img src="/images/1.png" height="90vh" />
+      <img src="/images/1.png" />
       <Offerings/>
       <Footer/>
     </Fragment>
