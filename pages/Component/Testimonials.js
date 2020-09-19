@@ -1,5 +1,5 @@
 import TestimonialCard from './TestimonialCard';
-import { testimonialsList } from '../constants/constants';
+import { testimonialsList } from '../../src/constants/constants';
 
 function Testimonials() {
 	return (
