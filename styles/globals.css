@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.footerTopic > li {
+  display: hidden;
+}
+li {
+  font-family: 'Open Sans', sans-serif;
+}
