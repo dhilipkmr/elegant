@@ -1,8 +1,9 @@
+import Link from 'next/link'
 import { useEffect, useState } from 'react';
 import { ROUTES, WEBSITE_NAME } from '../../../src/constants/constants';
 
 function NavBar() {
-	const [activePage, setActivePage] = useState('');
+	const [activePage, setActivePage] = useState('/');
 
 	useEffect(() => {
 		setActivePage(window.location.pathname);
@@ -33,7 +34,9 @@ function NavBar() {
 										const activeClass = (activePage !== '/' && url.startsWith(activePage)) ? 'active' : 'hover_line';
 										return (
 											<li key={url} className="relative">
-												<a className={`nav-item ${activeClass}`} href={url}>{name}</a>
+												<Link href={url}>
+													<a className={`nav-item ${activeClass}`}>{name}</a>
+												</Link>
 											</li>
 										)
 									})
