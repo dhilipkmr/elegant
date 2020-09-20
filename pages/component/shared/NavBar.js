@@ -18,11 +18,11 @@ function NavBar() {
 					<div class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1" id="menu">
 						<nav>
 							<ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0 text-xl quicks">
-								<li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="/">About</a></li>
-								<li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="/">Services</a></li>
-								<li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="/">Portfolio</a></li>
-								<li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="/">Testimony</a></li>
-								<li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="/">Contact</a></li>
+								<li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="/about">About</a></li>
+								<li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="/services">Services</a></li>
+								<li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="/portfolio">Portfolio</a></li>
+								<li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="/testimonials">Testimony</a></li>
+								<li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="/contact">Contact</a></li>
 							</ul>
 						</nav>
 					</div>

@@ -1,5 +1,5 @@
 import TestimonialCard from './TestimonialCard';
-import { testimonialsList } from '../../src/constants/constants';
+import { testimonialsList } from '../../../src/constants/constants';
 
 function Testimonials() {
 	return (
@@ -13,6 +13,13 @@ function Testimonials() {
 						)
 					})
 				}
+			</div>
+			<div className="text-center pt-5 pb-12">
+				<a href="/testimonials">
+					<button class="btn btn-theme uppercase p-5 px-10">
+						View More
+					</button>
+				</a>
 			</div>
 		</div>
 	)

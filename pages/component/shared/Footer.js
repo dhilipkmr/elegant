@@ -1,6 +1,6 @@
 function Footer() {
 	return (
-		<div className="justify-center m-10">
+		<div className="justify-center p-10 bg-black text-gray-400">
 			<ul className="flex flex-col md:flex-row md:justify-evenly footerTopic leading-8">
 				<li className="mb-5">
 					<div class="text-xl uppercase quicks font-extrabold inline-block">

@@ -2,8 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './home.module.css';
+
 :root {
   --main-theme-color: goldenrod;
+  --main-theme-dark: #b5891b;
 }
 
 .quicks {
@@ -15,73 +18,15 @@
   width: 50%;
 }
 
-/* // testimonial */
-.homeTestimonalBg {
-  background: url("/images/bg1.webp") repeat fixed center;
+.btn {
+  @apply rounded;
 }
 
-.testimonialCard {
-  @apply shadow bg-white rounded-lg p-20 relative;
-  /* max-width: 500px; */
+.btn-theme {
+  @apply text-white;
+  background-color: var(--main-theme-color);
 }
 
-.testimonialCard .dummyImgBrdr {
-  position: absolute;
-  left: -180px;
-  top: 25%;
-  object-fit: cover;
-  height: 165px;
-  width: 160px;
-  border: 7px solid white;
-}
-
-.testimonialCard img {
-  position: relative;
-  object-fit: cover;
-  height: 165px;
-  width: 160px;
-}
-
-.testimonialCard .quote {
-  color: var(--main-theme-color);
-  font-size: 30px;
-}
-
-
-@screen xs {
-  .testimonialCard {
-    padding: 40px 20px;
-  }
-
-  .testimonialCard img {
-    left: 0;
-    bottom: 0;
-  }
-
-  .testimonialCard .dummyImgBrdr {
-    position: relative;
-    left: auto;
-    top: auto;
-    margin-bottom: 30px;
-  }
-}
-
-@screen md {
-  .testimonialCard {
-    padding: 20px 20px 20px 60px;
-    width: 85%;
-    margin-left: 22%;
-  }
-
-  .testimonialCard img {
-   left: 20px;
-    bottom: 30px;
-  }
-
-  .testimonialCard .dummyImgBrdr {
-    position: absolute;
-    left: -135px;
-    top: 25%;
-    margin-bottom: auto;
-  }
+.btn-theme:hover {
+  background-color: var(--main-theme-dark);
 }
