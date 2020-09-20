@@ -23,7 +23,7 @@ function Testimonials() {
 					<a>
 						<button className="btn btn-theme uppercase p-5 px-10 quicks font-bold">
 							<div className="flex flex-row items-center">
-								<span className="whitespace-no-wrap">View More</span>
+								<span className="whitespace-no-wrap text-lg">View More</span>
 								<RiExternalLinkFill className="ml-2" />
 							</div>
 						</button>

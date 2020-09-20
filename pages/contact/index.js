@@ -49,7 +49,7 @@ function Contact({ Component, pageProps }) {
 			<div class="pb-5 pt-12 text-3xl quicks font-extrabold text-center text-gray-800">
 				Send us a Message
 			</div>
-			<div className="w-full md:max-w-xl">
+			<div className="w-full md:max-w-3xl">
 				<ContactMessage />
 			</div>
 		</div>

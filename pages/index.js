@@ -13,10 +13,10 @@ export default function Home() {
         <img src="/images/1.png" />
         <Testimonials />
         <div>
-          <div class="py-10 sm:py-20 text-3xl sm:text-5xl quicks font-extrabold text-center text-gray-800">
+          <div class="py-10 text-3xl sm:text-5xl quicks font-extrabold text-center text-gray-800">
             Contact us
 			    </div>
-          <div className="w-full p-5 md:max-w-xl md:m-20">
+          <div className="w-full p-5 md:max-w-3xl md:pl-20 md:pb-20">
             <ContactMessage />
           </div>
         </div>

@@ -9,9 +9,22 @@ export default function ContactMessage() {
 	const [status, setStatus] = useState('');
 
 	function handleSendMessageClick(e) {
-		const userContact = userContactRef.current.value;
-		const msg = msgRef.current.value;
-		if (userContact && msg) {
+		const email = userContactRef.current.value;
+		const message = msgRef.current.value;
+		if (message && email) {
+			fetch('https://ihqtv3dj46.execute-api.us-east-1.amazonaws.com/dev/nodemailer', {
+				method: 'POST',
+				body: JSON.stringify({
+					message, email
+				}),
+				headers: {
+					'Content-Type': 'application/json'
+				}
+			}).then((res) => {
+				return res.json();
+			}).then((res) => {
+				console.log(res);
+			});
 			setStatus('SUCCESS');
 		} else {
 			setStatus('ERROR');
