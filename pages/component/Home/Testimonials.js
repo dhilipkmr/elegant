@@ -6,7 +6,7 @@ import { RiExternalLinkFill } from 'react-icons/ri';
 function Testimonials() {
 	return (
 		<div className="homeTestimonalBg">
-			<div className="py-20 text-5xl quicks font-extrabold text-center text-gray-800">Testimonials</div>
+			<div className="py-10 sm:py-20 text-3xl sm:text-5xl quicks font-extrabold text-center text-gray-800">Testimonials</div>
 			<div className="p-3 md:p-20 md:pt-5 w-full">
 				{
 					testimonialsList.slice(0, 2).map((item, index) => {

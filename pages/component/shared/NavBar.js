@@ -1,9 +1,14 @@
 import Link from 'next/link'
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { ROUTES, WEBSITE_NAME } from '../../../src/constants/constants';
 
 function NavBar() {
 	const [didMount, setDidMount] = useState(false);
+	const navMenuRef = useRef(null);
+
+	function handleClick() {
+		navMenuRef.current.classList.toggle('navMenu-show');
+	}
 
 	useEffect(() => {
 		setDidMount(true);
@@ -12,7 +17,7 @@ function NavBar() {
 	const activePage = (typeof location !== 'undefined' && didMount) ? location.pathname : '/';
 	return (
 		<nav id="header" className="w-full z-30 top-0 py-1" key={activePage}>
-			<div className="w-full mx-auto flex flex-wrap items-center justify-between mt-0 px-20 py-6">
+			<div className="w-full mx-auto flex flex-wrap items-center justify-between mt-0 px-10 sm:px-20 py-6">
 				<div className="order-1 md:order-2">
 					<Link href="/">
 						<a className="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-4xl quicks">
@@ -27,7 +32,7 @@ function NavBar() {
 							<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
 						</svg>
 					</label>
-					<input className="hidden" type="checkbox" id="menu-toggle" />
+					<input className="hidden" type="checkbox" id="menu-toggle" onClick={handleClick}/>
 					<div className="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1" id="menu">
 						<nav>
 							<ul className="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0 text-xl quicks">
@@ -47,6 +52,22 @@ function NavBar() {
 						</nav>
 					</div>
 				</div>
+			</div>
+			<div className="md:hidden">
+				<ul class="text-center text-xl leading-9 h-0 overflow-hidden navMenu" ref={navMenuRef}>
+					{
+						ROUTES.map(({ url, name }) => {
+							const activeClass = (activePage !== '/' && url.startsWith(activePage)) ? 'active' : 'hover_line';
+							return (
+								<li key={url} className="relative">
+									<Link href={url}>
+										<a className={`nav-item ${activeClass}`}>{name}</a>
+									</Link>
+								</li>
+							)
+						})
+					}
+				</ul>
 			</div>
 		</nav>
 	);

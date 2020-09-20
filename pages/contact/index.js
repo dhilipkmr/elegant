@@ -14,31 +14,31 @@ function Contact({ Component, pageProps }) {
 			</div>
 			<div class="flex flex-row flex-wrap w-full text-4xl mt-10 mb-20 text-left">
 				<div className="w-2/6 mx-auto">
-					<div className="w-full md:w-1/2 my-5 md:inline-block">
+					<div className="w-full lg:w-1/2 my-5 lg:inline-block">
 						<a className="contact-icon" href="/">
 							<FaInstagram className="inline-block mr-4" />
 							<span className="text-xl">@ms_elegant</span>
 						</a>
 					</div>
-					<div className="w-full md:w-1/2 my-5 md:inline-block">
+					<div className="w-full lg:w-1/2 my-5 lg:inline-block">
 						<a className="contact-icon" href="/">
 							<FaWhatsapp className="inline-block mr-4" />
 							<span className="text-xl">@9999-9999</span>
 						</a>
 					</div>
-					<div className="w-full md:w-1/2 my-5 md:inline-block">
+					<div className="w-full lg:w-1/2 my-5 lg:inline-block">
 						<a className="contact-icon" href="/">
 							<FiFacebook className="inline-block mr-4" />
 							<span className="text-xl">@ms_elegant</span>
 						</a>
 					</div>
-					<div className="w-full md:w-1/2 my-5 md:inline-block">
+					<div className="w-full lg:w-1/2 my-5 lg:inline-block">
 						<a className="contact-icon" href="/">
 							<GoMail className="inline-block mr-4" />
 							<span className="text-xl">name@email.com</span>
 						</a>
 					</div>
-					{/* <div className="w-full md:w-1/2 my-5 md:inline-block">
+					{/* <div className="w-full lg:w-1/2 my-5 lg:inline-block">
 						<a className="contact-icon" href="/">
 							<FiPhone className="inline-block mr-4" />
 							<span className="text-xl">+91-99999-99999</span>

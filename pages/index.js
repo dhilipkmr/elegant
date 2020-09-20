@@ -13,7 +13,7 @@ export default function Home() {
         <img src="/images/1.png" />
         <Testimonials />
         <div>
-          <div class="pb-5 pt-12 text-5xl quicks font-extrabold text-center text-gray-800">
+          <div class="py-10 sm:py-20 text-3xl sm:text-5xl quicks font-extrabold text-center text-gray-800">
             Contact us
 			    </div>
           <div className="w-full p-5 md:max-w-xl md:m-20">
