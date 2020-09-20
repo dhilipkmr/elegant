@@ -3,15 +3,15 @@ import { useEffect, useState } from 'react';
 import { ROUTES, WEBSITE_NAME } from '../../../src/constants/constants';
 
 function NavBar() {
-	const [activePage, setActivePage] = useState('/');
+	const [didMount, setDidMount] = useState(false);
 
 	useEffect(() => {
-		setActivePage(window.location.pathname);
-		console.log(activePage);
+		setDidMount(true);
 	}, []);
 
+	const activePage = (typeof location !== 'undefined' && didMount) ? location.pathname : '/';
 	return (
-		<nav id="header" className="w-full z-30 top-0 py-1">
+		<nav id="header" className="w-full z-30 top-0 py-1" key={activePage}>
 			<div className="w-full mx-auto flex flex-wrap items-center justify-between mt-0 px-20 py-6">
 				<div className="order-1 md:order-2">
 					<a className="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-2xl quicks" href="/">
