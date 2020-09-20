@@ -14,9 +14,11 @@ function NavBar() {
 		<nav id="header" className="w-full z-30 top-0 py-1" key={activePage}>
 			<div className="w-full mx-auto flex flex-wrap items-center justify-between mt-0 px-20 py-6">
 				<div className="order-1 md:order-2">
-					<a className="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-2xl quicks" href="/">
-						{WEBSITE_NAME}
-          </a>
+					<Link href="/">
+						<a className="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-2xl quicks">
+							{WEBSITE_NAME}
+						</a>
+					</Link>
 				</div>
 				<div className="order-2 md:order-3 flex items-center" id="nav-content">
 					<label htmlFor="menu-toggle" className="cursor-pointer md:hidden block">

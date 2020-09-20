@@ -23,8 +23,17 @@
   border-top: 7px solid var(--main-theme-dark);
 }
 
+.footer-icon {
+  transition: all 100ms ease-in-out;
+}
+
+.footer-icon:hover {
+  transform: scale(1.2);
+  color: goldenrod;
+}
+
 .btn {
-  @apply rounded;
+  @apply rounded outline-none;
 }
 
 .btn-theme {

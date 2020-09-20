@@ -1,5 +1,7 @@
+import Link from 'next/link';
 import TestimonialCard from './TestimonialCard';
 import { testimonialsList } from '../../../src/constants/constants';
+import { RiExternalLinkFill } from 'react-icons/ri';
 
 function Testimonials() {
 	return (
@@ -17,11 +19,16 @@ function Testimonials() {
 				}
 			</div>
 			<div className="text-center pt-5 pb-20">
-				<a href="/testimonials">
-					<button className="btn btn-theme uppercase p-5 px-10 quicks font-bold">
-						View More
-					</button>
-				</a>
+				<Link href="/testimonials">
+					<a>
+						<button className="btn btn-theme uppercase p-5 px-10 quicks font-bold">
+							<div className="flex flex-row items-center">
+								<span className="whitespace-no-wrap">View More</span>
+								<RiExternalLinkFill className="ml-2" />
+							</div>
+						</button>
+					</a>
+				</Link>
 			</div>
 		</div>
 	)
