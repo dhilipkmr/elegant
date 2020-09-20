@@ -56,6 +56,10 @@
     margin-left: 25%;
   }
 
+  .testimonial .testimonialCard {
+    margin-left: 14%;
+  }
+
   .testimonialCard img {
    left: 20px;
     bottom: 30px;

@@ -4,7 +4,7 @@ function TestimonialCard(props) {
 	const { data = {} } = props || {};
 	const { imgUrl = '', testimonialTxt = '', customerName = ''} = data || {};
 	return (
-		<div className="p-3 inline-block w-full md:w-1/2">
+		<div className="p-3 inline-block w-full">
 			<div className="md:mx-5">
 				<div className="flex flex-end">
 				<div className="testimonialCard relative">
