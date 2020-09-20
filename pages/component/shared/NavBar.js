@@ -15,7 +15,7 @@ function NavBar() {
 			<div className="w-full mx-auto flex flex-wrap items-center justify-between mt-0 px-20 py-6">
 				<div className="order-1 md:order-2">
 					<Link href="/">
-						<a className="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-2xl quicks">
+						<a className="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-4xl quicks">
 							{WEBSITE_NAME}
 						</a>
 					</Link>

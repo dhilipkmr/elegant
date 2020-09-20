@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import './home.module.css';
+@import './contact.module.css';
 
 :root {
   --main-theme-color: goldenrod;

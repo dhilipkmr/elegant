@@ -16,7 +16,7 @@ export default function Home() {
           <div class="pb-5 pt-12 text-5xl quicks font-extrabold text-center text-gray-800">
             Contact us
 			    </div>
-          <div className="w-full m-5 md:max-w-xl md:m-20">
+          <div className="w-full p-5 md:max-w-xl md:m-20">
             <ContactMessage />
           </div>
         </div>

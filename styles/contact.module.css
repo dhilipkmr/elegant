@@ -1,0 +1,7 @@
+.contact-icon {
+	transition: all 100ms ease-in;
+}
+
+.contact-icon:hover {
+	color: var(--main-theme-dark);
+}
