@@ -4,25 +4,27 @@ import { GoMail } from 'react-icons/go';
 
 function Footer() {
 	return (
-		<div className="justify-center p-10 bg-black text-gray-400 footer_border">
+		<div className="justify-center p-10 bg-black text-gray-400">
 			<ul className="w-full">
-				<li className="mb-8 w-full md:w-1/3 flex flex-row md:justify-center md:inline-block">
-					<div className="flex flex-col items-center">
-						<div>
-							<div className="text-xl uppercase quicks font-extrabold inline-block">
-								Explore
+				<li className="mb-8 w-1/2 md:w-1/3 inline-block">
+					<div>
+						<div className="flex flex-col items-start md:items-center">
+							<div>
+								<div className="text-xl uppercase quicks font-extrabold inline-block">
+									Explore
 							<div className="brdr50"></div>
+								</div>
+								<ul className="mt-5 leading-9">
+									<li>About Us</li>
+									<li>Testimony</li>
+									<li>Portfolio</li>
+								</ul>
 							</div>
-							<ul className="mt-5 leading-9">
-								<li>About Us</li>
-								<li>Testimony</li>
-								<li>Portfolio</li>
-							</ul>
 						</div>
 					</div>
 				</li>
-				<li className="mb-8 w-full md:w-1/3 flex flex-row md:justify-center md:inline-block">
-					<div className="flex flex-col items-center">
+				<li className="mb-8 w-1/2 md:w-1/3 inline-block">
+					<div className="flex flex-col items-start md:items-center">
 						<div>
 							<div className="text-xl uppercase quicks font-extrabold inline-block">
 								Services
@@ -37,8 +39,8 @@ function Footer() {
 						</div>
 					</div>
 				</li>
-				<li className="mb-8 w-full md:w-1/3 flex flex-row md:justify-center md:inline-block">
-					<div className="flex flex-col items-center">
+				<li className="mb-8 md:w-1/3 inline-block">
+					<div className="flex flex-col items-start md:items-center">
 						<div>
 							<div className="text-xl uppercase quicks font-extrabold inline-block">
 								Get in Touch

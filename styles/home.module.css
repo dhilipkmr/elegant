@@ -34,18 +34,20 @@
 @screen xs {
   .testimonialCard {
     padding: 40px 20px;
+    margin-bottom: 75px;
   }
 
   .testimonialCard img {
-    left: 0;
-    bottom: 0;
+    left: 12px;
+    bottom: -12px;
   }
 
   .testimonialCard .dummyImgBrdr {
     position: relative;
     left: auto;
-    top: auto;
+    top: -115px;
     margin-bottom: 30px;
+    height: 85px;
   }
 }
 
@@ -70,5 +72,6 @@
     left: -135px;
     top: 25%;
     margin-bottom: auto;
+    height: auto;
   }
 }

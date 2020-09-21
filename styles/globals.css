@@ -9,7 +9,11 @@
   --main-theme-color: goldenrod;
   --main-theme-dark: #b5891b;
   --text-hightlight-color: antiquewhite;
-  font-size: 16px;
+  font-size: 12px;
+}
+
+.theme-dark-color {
+  color: var(--main-theme-dark);
 }
 
 .quicks {
@@ -19,6 +23,12 @@
 .brdr50 {
   border-bottom: 3px solid var(--main-theme-color);
   width: 50%;
+}
+
+.rotate {
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
 }
 
 .navMenu {
@@ -44,6 +54,10 @@
 
 .btn {
   @apply rounded outline-none;
+}
+
+.btn:focus {
+  outline: none;
 }
 
 .btn-theme {

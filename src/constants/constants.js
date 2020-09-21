@@ -1,18 +1,18 @@
 //Nav bar
 export const WEBSITE_NAME = 'ELEGANT';
 export const ROUTES = [
-	{
-		url: '/about',
-		name: 'About'
-	},
+	// {
+	// 	url: '/about',
+	// 	name: 'About'
+	// },
 	{
 		url: '/services',
 		name: 'Services'
 	},
-	{
-		url: '/portfolio',
-		name: 'Portfolio'
-	},
+	// {
+	// 	url: '/portfolio',
+	// 	name: 'Portfolio'
+	// },
 	{
 		url: '/testimonials',
 		name: 'Testimony'
@@ -64,3 +64,11 @@ export const testimonialsList = [
 	}
 ];
 
+
+// services
+
+export const SERVICES_LIST = new Array(4).fill({
+	title: 'Eye Makeup Specialist',
+	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco!',
+	imgurl: "/images/1.png"
+});
