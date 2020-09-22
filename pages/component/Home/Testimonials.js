@@ -18,7 +18,7 @@ function Testimonials() {
 					})
 				}
 			</div>
-			<div className="text-center pb-10">
+			<div className="text-center pb-24 pt-8">
 				<Link href="/testimonials">
 					<a>
 						<button className="btn btn-theme uppercase p-3 px-5 sm:p-5 sm:px-10 quicks font-bold">

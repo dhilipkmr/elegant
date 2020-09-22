@@ -9,7 +9,7 @@ function Contact({ Component, pageProps }) {
 			{/* <div className="pb-5 pt-12 text-5xl quicks font-extrabold text-center text-gray-800">
 				Get in touch with us
 			</div> */}
-			<div className="pb-5 pt-12 text-3xl sm:text-5xl quicks font-extrabold text-center text-gray-800">
+			<div className="pb-5 pt-8 text-3xl sm:text-5xl quicks font-extrabold text-center text-gray-800">
 				Get in touch with Us
 			</div>
 			<div className="flex flex-row flex-wrap w-full text-4xl mt-10 mb-10 sm:mb-20 text-left">

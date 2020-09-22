@@ -1,23 +1,46 @@
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { FiFacebook, FiPhone } from 'react-icons/fi';
 import { GoMail } from 'react-icons/go';
+import Link from 'next/link';
 
 function Footer() {
 	return (
-		<div className="justify-center p-10 bg-black text-gray-400">
+		<div className="justify-center p-10 md:pt-24 bg-black text-gray-400">
 			<ul className="w-full">
 				<li className="mb-8 w-1/2 md:w-1/3 inline-block">
 					<div>
 						<div className="flex flex-col items-start md:items-center">
 							<div>
-								<div className="text-xl uppercase quicks font-extrabold inline-block">
+								<div className="text-2xl uppercase quicks font-extrabold inline-block">
 									Explore
 							<div className="brdr50"></div>
 								</div>
-								<ul className="mt-5 leading-9">
-									<li>About Us</li>
-									<li>Testimony</li>
-									<li>Portfolio</li>
+								<ul className="mt-5 leading-9 md:text-lg">
+									<li className="footer-icon">
+										<Link href="/about">
+											<a>About Us</a>
+										</Link>
+									</li>
+									<li className="footer-icon">
+										<Link href="/services">
+											<a>Services</a>
+										</Link>
+									</li>
+									<li className="footer-icon">
+										<Link href="/testimonials">
+											<a>Testimony</a>
+										</Link>
+									</li>
+									<li className="footer-icon">
+										<Link href="/portfolio">
+											<a>Portfolio</a>
+										</Link>
+									</li>
+									<li className="footer-icon">
+										<Link href="/contact">
+											<a>Contact</a>
+										</Link>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -26,11 +49,11 @@ function Footer() {
 				<li className="mb-8 w-1/2 md:w-1/3 inline-block">
 					<div className="flex flex-col items-start md:items-center">
 						<div>
-							<div className="text-xl uppercase quicks font-extrabold inline-block">
+							<div className="text-2xl uppercase quicks font-extrabold inline-block">
 								Services
 							<div className="brdr50"></div>
 							</div>
-							<ul className="mt-5 leading-9">
+							<ul className="mt-5 leading-9 md:text-lg">
 								<li>Bridal makeup</li>
 								<li>Party makeup</li>
 								<li>Pre Wedding Makeup</li>
@@ -42,36 +65,39 @@ function Footer() {
 				<li className="mb-8 md:w-1/3 inline-block">
 					<div className="flex flex-col items-start md:items-center">
 						<div>
-							<div className="text-xl uppercase quicks font-extrabold inline-block">
+							<div className="text-2xl uppercase quicks font-extrabold inline-block">
 								Get in Touch
 							<div className="brdr50"></div>
 							</div>
-							<ul className="mt-8 text-3xl flex flex-wrap">
-								<li className="mr-3 footer-icon">
+							<ul className="mt-5 text-3xl flex flex-wrap flex-col">
+								{/* <li className="mr-3 footer-icon">
 									<a target="_blank" href="tel:555-555-5555">
-										<FiPhone />
+										<FiPhone className="inline-block mr-3" />
+										<span class="text-lg sm:text-xl">contactus@mselegant.in</span>
 									</a>
-								</li>
-								<li className="mx-3 footer-icon">
+								</li> */}
+								<li className="mr-3 footer-icon">
 									<a target="_blank" href="mailto:name@email.com">
-										<GoMail />
+										<GoMail className="inline-block mr-3" />
+										<span class="text-lg sm:text-xl">contactus@mselegant.in</span>
 									</a>
 								</li>
-							</ul>
-							<ul className="mt-5 text-3xl flex flex-wrap">
 								<li className="mr-3 footer-icon">
 									<a target="_blank" href="https://www.instagram.com">
-										<FaInstagram />
+										<FaInstagram className="inline-block mr-3" />
+										<span class="text-lg sm:text-xl">@mselegant</span>
 									</a>
 								</li>
-								<li className="mx-3 footer-icon">
+								<li className="mr-3 footer-icon">
 									<a target="_blank" href="https://www.facebook.com">
-										<FiFacebook />
+										<FiFacebook className="white inline-block mr-3" />
+										<span class="text-lg sm:text-xl">@mselegant</span>
 									</a>
 								</li>
-								<li className="mx-3 footer-icon">
+								<li className="mr-3 footer-icon">
 									<a target="_blank" href="https://www.whatsapp.com">
-										<FaWhatsapp />
+										<FaWhatsapp className="inline-block mr-3" />
+										<span class="text-lg sm:text-xl">@99999-99999</span>
 									</a>
 								</li>
 							</ul>

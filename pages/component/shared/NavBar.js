@@ -14,7 +14,7 @@ function NavBar() {
 		setDidMount(true);
 	}, []);
 
-	const activePage = (typeof location !== 'undefined' && didMount) ? location.pathname : '/';
+	const activePage = (typeof location !== 'undefined' && didMount) ? location.pathname : '';
 	return (
 		<nav id="header" className="w-full z-30 top-0 py-1" key={activePage}>
 			<div className="w-full mx-auto flex flex-wrap items-center justify-between mt-0 px-10 sm:px-20 py-2 md:py-6">
@@ -28,12 +28,13 @@ function NavBar() {
 					<input className="hidden" type="checkbox" id="menu-toggle" onClick={handleClick} />
 					<div className="hidden lg:flex lg:items-center lg:w-auto w-full order-3 lg:order-1" id="menu">
 						<nav>
-							<ul className="lg:flex items-center justify-between text-gray-700 pt-4 lg:pt-0 text-xl quicks">
+							<ul className="lg:flex items-center justify-between text-gray-700 pt-4 lg:pt-0 lg:text-2xl quicks">
 								{
 									ROUTES.map(({ url, name }) => {
-										const activeClass = (activePage !== '/' && url.startsWith(activePage)) ? 'active' : 'hover_line';
+										const isHome = activePage === '/' && url === '/';
+										const activeClass = (isHome || (activePage !== '/' && url.startsWith(activePage))) ? 'active' : 'hover_line';
 										return (
-											<li key={url} className="relative">
+											<li key={url} className="relative px-3">
 												<Link href={url}>
 													<a className={`nav-item quicks ${activeClass}`}>{name}</a>
 												</Link>
