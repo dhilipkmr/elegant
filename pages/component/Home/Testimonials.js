@@ -7,7 +7,7 @@ function Testimonials() {
 	return (
 		<div className="homeTestimonalBg">
 			<div className="pt-10 pb-20 sm:py-20 text-3xl sm:text-5xl quicks font-extrabold text-center text-gray-800">Testimonials</div>
-			<div className="p-3 md:p-10 md:pt-5 w-full">
+			<div className="px-3 md:p-10 md:pt-5 w-full">
 				{
 					testimonialsList.slice(0, 2).map((item, index) => {
 						return (
@@ -18,7 +18,7 @@ function Testimonials() {
 					})
 				}
 			</div>
-			<div className="text-center pb-24 pt-8">
+			<div className="text-center pb-10 md:pb-24 md:pt-8">
 				<Link href="/testimonials">
 					<a>
 						<button className="btn btn-theme uppercase p-3 px-5 sm:p-5 sm:px-10 quicks font-bold">

@@ -1,7 +1,7 @@
 import { GiPencilBrush } from 'react-icons/gi';
 
 //Nav bar
-export const WEBSITE_NAME = 'ELEGANT';
+export const WEBSITE_NAME = 'MS.ELEGANT';
 export const ROUTES = [
 	// {
 	// 	url: '/about',

@@ -9,11 +9,15 @@
   --main-theme-color: goldenrod;
   --main-theme-dark: #b5891b;
   --text-hightlight-color: antiquewhite;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .theme-dark-color {
   color: var(--main-theme-dark);
+}
+
+.bg-dark-theme {
+  background: var(--main-theme-dark);
 }
 
 .quicks {
@@ -36,7 +40,7 @@
 }
 
 .navMenu-show {
-  height: 250px !important;
+  height: 188px !important;
 }
 
 .footer_border {

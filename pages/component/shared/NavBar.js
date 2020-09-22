@@ -16,8 +16,8 @@ function NavBar() {
 
 	const activePage = (typeof location !== 'undefined' && didMount) ? location.pathname : '';
 	return (
-		<nav id="header" className="w-full z-30 top-0 py-1" key={activePage}>
-			<div className="w-full mx-auto flex flex-wrap items-center justify-between mt-0 px-10 sm:px-20 py-2 md:py-6">
+		<nav id="header" className="w-full z-30 top-0 py-0" key={activePage}>
+			<div className="w-full mx-auto flex flex-wrap items-center justify-between mt-0 px-10 sm:px-20 py-4 md:py-6">
 				<div className="order-1 lg:order-2 flex items-center" id="nav-content">
 					<label htmlFor="menu-toggle" className="cursor-pointer block lg:hidden">
 						<svg className="fill-current text-gray-900" width="20" height="20" viewBox="0 0 20 20">
@@ -55,7 +55,7 @@ function NavBar() {
 				</div>
 				<div className="order-3 lg:hidden"></div>
 			</div>
-			<div className="lg:hidden">
+			<div className="lg:hidden bg-dark-theme">
 				<ul className="text-center text-xl leading-9 h-0 overflow-hidden navMenu" ref={navMenuRef}>
 					{
 						ROUTES.map(({ url, name }) => {
