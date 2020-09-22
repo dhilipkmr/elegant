@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Testimonials from './component/Home/Testimonials';
 import ContactMessage from './component/shared/ContactMessage';
 import Services from './component/shared/Services';
+import Gallery from './component/shared/Gallery';
 
 export default function Home() {
   return (
@@ -16,7 +17,8 @@ export default function Home() {
           height: '90vh',
           objectFit: 'cover'
 }}/>
-        <Services/>
+        <Services />
+        <Gallery/>
         <Testimonials />
         <div>
           <div className="py-10 pt-16 text-3xl sm:text-5xl quicks font-extrabold text-center text-gray-800">

@@ -7,7 +7,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Head>
+        <meta charSet="utf-8"></meta>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <meta name="author" content="dhilipkmr"></meta>
+        <title>Ms.Elegant | Bridal Makeover, Makeup Artists in Coimbatore</title>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
       </Head>
       <NavBar />

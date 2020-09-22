@@ -32,8 +32,8 @@ function Footer() {
 										</Link>
 									</li>
 									<li className="footer-icon">
-										<Link href="/portfolio">
-											<a>Portfolio</a>
+										<Link href="/gallery">
+											<a>Gallery</a>
 										</Link>
 									</li>
 									<li className="footer-icon">

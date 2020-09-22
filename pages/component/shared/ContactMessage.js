@@ -55,7 +55,7 @@ export default function ContactMessage() {
 		<form className="w-full">
 			<div className="flex flex-wrap -mx-3 mb-6 sm:text-xl">
 				<div className="w-full px-3">
-					<label className="quicks block uppercase tracking-wide text-gray-700 font-bold mb-2 sm:text-xl" for="grid-password">
+					<label className="quicks block uppercase tracking-wide text-gray-700 font-bold mb-2 sm:text-xl" htmlFor="grid-password">
 						E-mail/Phone No.
 					</label>
 					<input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" placeholder="Enter your Email / Phone no." ref={userContactRef}/>
@@ -63,7 +63,7 @@ export default function ContactMessage() {
 			</div>
 			<div className="flex flex-wrap -mx-3 mb-6">
 				<div className="w-full px-3">
-					<label className="quicks block uppercase tracking-wide text-gray-700 font-bold mb-2 sm:text-xl" for="grid-password">
+					<label className="quicks block uppercase tracking-wide text-gray-700 font-bold mb-2 sm:text-xl" htmlFor="grid-password">
 						Message
 						</label>
 					<textarea className="no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none sm:text-xl" placeholder="Ask us anything..." id="message" ref={msgRef}>

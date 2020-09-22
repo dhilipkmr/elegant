@@ -12,7 +12,7 @@ function Services({ Component, pageProps }) {
 								<div className="flex flex-col items-center">
 									<div className="text-6xl"><Icon className="theme-dark-color" /></div>
 									<div className="text-center text-2xl md:text-3xl quicks mb-5 md:my-10">{title}</div>
-									<div className="text-lg leading-10">
+									<div className="text-xl leading-10">
 										{description}
 									</div>
 								</div>
