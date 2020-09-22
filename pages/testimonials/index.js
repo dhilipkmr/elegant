@@ -5,7 +5,7 @@ function Testimonials() {
 	return (
 		<div className="testimonial homeTestimonalBg">
 			<div className="pb-20 sm:pb-5 pt-12 text-4xl sm:text-5xl quicks font-extrabold text-center text-gray-800">Testimonials</div>
-			<div className="p-3 md:p-20 md:pt-5 w-full">
+			<div className="pt-10 p-3 md:p-20 md:pt-5 w-full">
 				{
 					testimonialsList.map((item, index) => {
 						return (

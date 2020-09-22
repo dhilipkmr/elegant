@@ -12,7 +12,7 @@ function TestimonialCard(props) {
 						<img loading="lazy" src={imgUrl}/>
 					</div>
 					<FaQuoteLeft className="quote"/>
-						<div className="bg-white leading-10 text-base sm:text-xl py-10">
+						<div className="bg-white leading-10 text-lg sm:text-xl py-10">
 						{testimonialTxt}
 					</div>
 					<div className="text-lg uppercase quicks font-extrabold text-gray-700">

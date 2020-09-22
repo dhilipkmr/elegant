@@ -63,7 +63,7 @@ function NavBar() {
 							return (
 								<li key={url} className="relative">
 									<Link href={url}>
-										<a className={`nav-item quicks ${activeClass}`}>{name}</a>
+										<a className={`nav-item text-white quicks ${activeClass}`}>{name}</a>
 									</Link>
 								</li>
 							)

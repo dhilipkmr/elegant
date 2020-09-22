@@ -127,6 +127,10 @@
   color: var(--main-theme-dark);
 }
 
+.bg-dark-theme .nav-item.active {
+  color: black;
+}
+
 .nav-item:not(.active):hover {
   @apply text-black font-bold;
 }
