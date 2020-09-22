@@ -9,7 +9,7 @@ function TestimonialCard(props) {
 				<div className="flex flex-end">
 				<div className="testimonialCard relative">
 					<div className="dummyImgBrdr">
-						<img src={imgUrl}/>
+						<img loading="lazy" src={imgUrl}/>
 					</div>
 					<FaQuoteLeft className="quote"/>
 						<div className="bg-white leading-10 text-base sm:text-xl py-10">

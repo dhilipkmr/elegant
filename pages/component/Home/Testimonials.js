@@ -2,8 +2,19 @@ import Link from 'next/link';
 import TestimonialCard from './TestimonialCard';
 import { testimonialsList } from '../../../src/constants/constants';
 import { RiExternalLinkFill } from 'react-icons/ri';
+import { useEffect, useState } from 'react';
 
 function Testimonials() {
+	// const [mounted, setMounted] = useState(false);
+
+	// useEffect(() => {
+	// 	setMounted(true);
+	// }, []);
+
+	// if (!mounted) {
+	// 	return null;
+	// }
+
 	return (
 		<div className="homeTestimonalBg">
 			<div className="pt-10 pb-20 sm:py-20 text-3xl sm:text-5xl quicks font-extrabold text-center text-gray-800">Testimonials</div>

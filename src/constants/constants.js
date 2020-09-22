@@ -48,5 +48,5 @@ export const SERVICES_LIST = new Array(4).fill({
 	Icon: GiPencilBrush,
 	title: 'Eye Makeup Specialist',
 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco!',
-	imgurl: "/images/F2.jpg"
+	imgurl: "/images/2.jpg"
 });

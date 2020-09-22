@@ -4,7 +4,7 @@ import { RiExternalLinkFill } from 'react-icons/ri';
 const IMAGES = ['/images/F2.jpg', '/images/F1.jpg', '/images/F3.jpg'];
 function Gallery() {
 	return (
-		<div className="bg-dark-theme pb-24">
+		<div className="bg-dark-theme pb-24 hidden xl:block">
 			<div className="pb-10 py-20 text-3xl sm:text-5xl quicks font-extrabold text-center text-white">Our Gallery</div>
 			<div class="flex flex-wrap justify-center">
 				{
@@ -16,7 +16,7 @@ function Gallery() {
 									height: '350px'
 								}}>
 									<div className="overlay"></div>
-									<img src={url} className="galleryImage" style={{
+									<img loading="lazy" src={url} className="galleryImage" style={{
 										width: '450px',
 										height: '350px',
 										objectFit: 'cover'
