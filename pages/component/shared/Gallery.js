@@ -12,13 +12,13 @@ function Gallery() {
 						return (
 							<div class="w-full px-5 sm:w-1/2 lg:w-1/3 lg:px-20 leading-10">
 								<div class="flex flex-col items-center my-5 sm:my-20 galleryImageWrap" style={{
-									width: '450px',
-									height: '350px'
+									width: '300px',
+									height: '250px'
 								}}>
 									<div className="overlay"></div>
 									<img loading="lazy" src={url} className="galleryImage" style={{
-										width: '450px',
-										height: '350px',
+										width: '300px',
+										height: '250px',
 										objectFit: 'cover'
 									}}/>
 								</div>
