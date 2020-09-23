@@ -134,3 +134,7 @@
 .nav-item:not(.active):hover {
   @apply text-black font-bold;
 }
+
+.blur {
+  filter: blur(10px);
+}

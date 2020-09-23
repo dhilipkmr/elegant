@@ -4,6 +4,7 @@ import Testimonials from './component/Home/Testimonials';
 import ContactMessage from './component/shared/ContactMessage';
 import Services from './component/shared/Services';
 import Gallery from './component/shared/Gallery';
+import BlurImage from './component/shared/BlurImage';
 
 export default function Home() {
   return (
@@ -12,11 +13,7 @@ export default function Home() {
         
       </Head>
       <div>
-        <img src="/images/2.jpg" style={{
-          width: '100vw',
-          height: '90vh',
-          objectFit: 'cover'
-}}/>
+        <BlurImage src1='/images/1-blur.jpg' src2='/images/2.jpg' style={{ width: '100vw', height: '90vh', objectFit: 'cover' }} />
         <Services />
         <Gallery/>
         <Testimonials />

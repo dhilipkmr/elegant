@@ -50,3 +50,13 @@ export const SERVICES_LIST = new Array(4).fill({
 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco!',
 	imgurl: "/images/2.jpg"
 });
+
+
+// Gallery 
+
+export const GALLERY_IMAGES_LIST = new Array(6).fill(1).map((_, index) => {
+	return {
+		url1: `/images/galleryblur/${index + 1}.jpg`,
+		url2: `/images/gallery/${index + 1}.jpg`
+	}
+});

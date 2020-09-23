@@ -1,4 +1,6 @@
 import { useState, Fragment } from "react";
+import { GALLERY_IMAGES_LIST } from '../../src/constants/constants';
+import BlurImage from '../component/shared/BlurImage';
 
 function Gallery({ Component, pageProps }) {
 	const [imgUrl, setImgUrl] = useState('');
@@ -13,12 +15,12 @@ function Gallery({ Component, pageProps }) {
 				<div className="pt-2 pb-8 md:pb-20 md:pt-12 text-4xl sm:text-5xl quicks font-extrabold text-center text-gray-800">Gallery</div>
 				<div class="flex flex-wrap justify-center">
 					{
-						new Array(11).fill(1).map((item, index) => {
+						GALLERY_IMAGES_LIST.map(({ url1, url2 }, index) => {
 							return (
 								<div class="w-full px-5 sm:w-1/2 lg:w-1/3 lg:px-8 leading-10">
-									<div class="flex flex-col items-center my-5 sm:my-5 galleryImageWrap overshadow" onClick={handleClick}>
+									<div class="mx-auto my-5 galleryImageWrap overshadow" onClick={handleClick}>
 										<div className="overlay"></div>
-										<img src="/images/2.jpg" className="galleryImage"/>
+										<BlurImage src1={url1} src2={url2} className="galleryImage"/>
 									</div>
 								</div>
 							)
