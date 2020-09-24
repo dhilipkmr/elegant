@@ -33,7 +33,7 @@
 .galleryImageWrap {
   cursor: pointer;
   position: relative;
-  border:10px solid white;
+  border:5px solid white;
   overflow: hidden;
   height: 250px;
   width:350px;
