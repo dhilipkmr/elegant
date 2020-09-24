@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import { Fragment, useState, useEffect } from 'react';
 import { GoMail } from 'react-icons/go';
 import Map from '../component/shared/Map';
 import { FiFacebook, FiPhone } from 'react-icons/fi';
@@ -6,6 +6,14 @@ import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import ContactMessage from '../component/shared/ContactMessage';
 
 function Contact({ Component, pageProps }) {
+	const [loadMap, setLoadMap] = useState(false);
+	
+	useEffect(() => {
+		setTimeout(() => {
+			setLoadMap(true);
+		}, 2000);
+	}, []);
+
 	return (
 		<Fragment>
 			<div className="md:mx-20 md:mb-20 p-5">
@@ -52,7 +60,7 @@ function Contact({ Component, pageProps }) {
 				<div className="w-full mt-5 mb-10">
 					<div className="flex flex-col md:flex-row">
 						<ContactMessage />
-						<Map className="w-full h-64 md:h-auto"/>
+						{loadMap ? <Map className="w-full h-64 md:h-auto mapBg rounded" /> : <div className="w-full mapBg rounded" />}
 					</div>
 				</div>
 			</div>

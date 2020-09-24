@@ -109,3 +109,7 @@
     height: auto;
   }
 }
+
+.mapBg {
+  background: linear-gradient(45deg, #edf2f7, #edf2f754);
+}

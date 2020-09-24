@@ -52,7 +52,7 @@ export default function ContactMessage() {
 
 
 	return (
-		<form className="w-full mb-10 md:mr-10">
+		<form className="w-full mb-10 md:mr-10 md:max-w-3xl">
 			<div className="flex flex-wrap -mx-3 mb-6 sm:text-xl">
 				<div className="w-full px-3">
 					<label className="quicks block uppercase tracking-wide text-gray-700 font-bold mb-2 sm:text-xl" htmlFor="grid-password">
