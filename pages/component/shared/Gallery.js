@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { RiExternalLinkFill } from 'react-icons/ri';
 import BlurImage from '../shared/BlurImage';
 
-const IMAGES = ['/images/F2.jpg', '/images/F1.jpg', '/images/F3.jpg'];
+const IMAGES = ['/images/gallery/a.jpg', '/images/gallery/a.jpg', '/images/gallery/a.jpg'];
 function Gallery() {
 	return (
 		<div className="bg-dark-theme pb-24 ">

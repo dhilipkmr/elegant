@@ -36,7 +36,7 @@ export const ROUTES = [
 export const testimonialsList = new Array(10).fill(1).map(() => {
 	const index = Math.floor(Math.random() * 1000) % 4 || Math.floor(Math.random() * 1000) % 4 || 1;
 	return {
-		imgUrl: `/images/F${index}.jpg`,
+		imgUrl: `/images/gallery/a.jpg`,
 		testimonialTxt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco!",
 		customerName: "Jane Doe"
 	};
@@ -48,7 +48,7 @@ export const SERVICES_LIST = new Array(4).fill({
 	Icon: GiPencilBrush,
 	title: 'Eye Makeup Specialist',
 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco!',
-	imgurl: "/images/2.jpg"
+	imgurl: "/images/gallery/a.jpg"
 });
 
 
@@ -56,7 +56,7 @@ export const SERVICES_LIST = new Array(4).fill({
 
 export const GALLERY_IMAGES_LIST = new Array(6).fill(1).map((_, index) => {
 	return {
-		url1: `/images/galleryblur/${index + 1}.jpg`,
-		url2: `/images/gallery/${index + 1}.jpg`
+		url1: `/images/gallery/a.jpg`,
+		url2: `/images/gallery/a.jpg`
 	}
 });
