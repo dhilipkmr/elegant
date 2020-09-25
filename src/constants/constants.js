@@ -25,6 +25,10 @@ export const ROUTES = [
 		name: 'Testimony'
 	},
 	{
+		url: '/get-quote',
+		name: 'Get Quote'
+	},
+	{
 		url: '/contact',
 		name: 'Contact'
 	}
@@ -60,3 +64,16 @@ export const GALLERY_IMAGES_LIST = new Array(6).fill(1).map((_, index) => {
 		url2: `/images/gallery/${index + 1}.jpg`
 	}
 });
+
+// get Quote:
+export const EVENT_TYPES = [
+	'Wedding',
+	'Pre-wedding',
+	'Post-wedding',
+	'Engagement',
+	'Party',
+	'Baby Shower',
+	'Bridesmaid',
+	'Others'
+]
+export const SESSIONS = ['1', '2', '3', '4 and more'];

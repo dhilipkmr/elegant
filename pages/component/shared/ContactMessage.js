@@ -2,6 +2,8 @@ import { BiSend } from 'react-icons/bi';
 import { useState, useRef } from 'react';
 import { RiEmotionLine, RiLoader4Line } from 'react-icons/ri';
 import Link from 'next/link';
+import Error from './Error';
+import Success from './Success';
 
 const MSG_API = 'https://ihqtv3dj46.execute-api.us-east-1.amazonaws.com/dev/nodemailer';
 
@@ -54,7 +56,7 @@ export default function ContactMessage() {
 	return (
 		<form className="w-full mb-10 md:mr-10 md:max-w-3xl">
 			<div className="flex flex-wrap -mx-3 mb-6 sm:text-xl">
-				<div className="w-full px-3">
+				<div className="w-full px-3 pr-8">
 					<label className="quicks block uppercase tracking-wide text-gray-700 font-bold mb-2 sm:text-xl" htmlFor="grid-password">
 						E-mail/Phone No.
 					</label>
@@ -62,7 +64,7 @@ export default function ContactMessage() {
 				</div>
 			</div>
 			<div className="flex flex-wrap -mx-3 mb-6">
-				<div className="w-full px-3">
+				<div className="w-full px-3 pr-8">
 					<label className="quicks block uppercase tracking-wide text-gray-700 font-bold mb-2 sm:text-xl" htmlFor="grid-password">
 						Message
 						</label>
@@ -83,27 +85,15 @@ export default function ContactMessage() {
 			<div>
 				{
 					status === 'SUCCESS' ?
-						<div className="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md mt-5" role="alert">
-							<div className="flex">
-								<div className="py-1"><svg className="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" /></svg></div>
-								<div>
-									<p className="font-bold quicks">We have received your message! <RiEmotionLine className="inline-block ml-1"/></p>
-									<p className="text-sm">Rest assured, we will contact you shortly.</p>
-								</div>
-							</div>
-						</div> :
+						<Success>
+							<p className="font-bold quicks">We have received your message! <RiEmotionLine className="inline-block ml-1" /></p>
+							<p className="text-sm">Rest assured, we will contact you shortly.</p>
+						</Success> :
 						null
 				}
 				{
 					status === 'ERROR' ?
-						<div role="alert">
-							<div className="bg-red-500 text-white quicks font-bold rounded-t px-4 py-2 mt-5">
-								Error
-							</div>
-							<div className="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
-								<p>{errorMsg}</p>
-							</div>
-						</div> :
+						<Error errorMsg={errorMsg}/> :
 						null
 				}
 			</div>

@@ -7,9 +7,17 @@ import Gallery from './component/shared/Gallery';
 import BlurImage from './component/shared/BlurImage';
 import Map from './component/shared/Map';
 import useIsInViewport from 'use-is-in-viewport'
+import GetQuote from './component/shared/GetQuote';
 
 export default function Home() {
   const [isInViewport, targetRef] = useIsInViewport({ threshold: 50 });
+  const [showMap, setShowMap] = useState(false);
+
+  useEffect(() => {
+    if (isInViewport && !showMap) {
+      setShowMap(true);
+    }
+  }, [isInViewport]);
 
   return (
     <Fragment>
@@ -18,14 +26,15 @@ export default function Home() {
         <Services />
         <Gallery/>
         <Testimonials />
+        <GetQuote/>
         <div ref={targetRef}>
-          <div className="py-10 pt-16 text-3xl sm:text-5xl quicks font-extrabold text-center text-gray-800">
+          <div className="py-10 text-3xl sm:text-5xl quicks font-extrabold text-center text-gray-800">
             Contact us
 			    </div>
-          <div className="w-full p-5 pb-10 md:pl-20 md:pb-20">
+          <div className="w-full p-5 pb-10 md:pb-20 md:px-32 md:mx-2">
             <div className="flex flex-col md:flex-row">
               <ContactMessage />
-              {isInViewport ? <Map className="w-full h-64 md:h-auto mapBg rounded" /> : <div className="w-full mapBg rounded"/>}
+              {/* {showMap ? <Map className="w-full h-64 md:h-auto mapBg rounded" /> : <div className="w-full mapBg rounded"/>} */}
             </div>
           </div>
         </div>
