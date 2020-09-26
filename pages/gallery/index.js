@@ -1,7 +1,7 @@
 import { useState, Fragment } from "react";
 import { GALLERY_IMAGES_LIST } from '../../src/constants/constants';
 import BlurImage from '../component/shared/BlurImage';
-import Modal from './modal';
+import Modal from '../component/shared/modal';
 
 function Gallery({ Component, pageProps }) {
 	const [modalImgIndex, setModalImgIndex] = useState(-1);

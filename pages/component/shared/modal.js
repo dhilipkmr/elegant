@@ -1,4 +1,4 @@
-import BlurImage from '../component/shared/BlurImage';
+import BlurImage from './BlurImage';
 import { useEffect, useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { AiOutlineInfoCircle } from 'react-icons/ai';
@@ -7,9 +7,9 @@ const NEXT = [38, 39];
 const PREV = [37, 40];
 
 function Modal(props) {
-	const { list, selectedIndex, closeModal } = props;
+	const { list = [], selectedIndex, closeModal } = props;
 	const [imgIndex, setImgindex] = useState(selectedIndex);
-	const lastIndex = list.length - 1;
+	const lastIndex = (list || []).length - 1;
 
 	function loadNext() {
 		setImgindex((index) => {
@@ -44,7 +44,7 @@ function Modal(props) {
 		}
 	}, []);
 
-	const { url1, url2, url3 } = list[imgIndex];
+	const { url1, url2, url3 } = list[imgIndex] || {};
 	const src1 = url2 || url1;
 	const src2 = url3 || url2;
 	return (
