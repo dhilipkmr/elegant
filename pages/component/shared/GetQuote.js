@@ -101,8 +101,8 @@ export default function GetQuote() {
 					</div>
 				</div>
 				<div className="mt-4 w-1/2">
-					<button onClick={handleBtnClick} className="btn btn-theme p-3 px-6 uppercase quicks flex flex-row items-center" type="button">
-						<span class="whitespace-no-wrap sm:text-xl">Get Quote</span>
+					<button onClick={handleBtnClick} className="buttonfx slideleft rounded p-2 px-6 uppercase quicks flex items-center whitespace-no-wrap" type="button" >
+						<span className="whitespace-no-wrap sm:text-lg z-1">Get Quote</span>
 					</button>
 				</div>
 				<div className="w-1/2 md:pr-12">

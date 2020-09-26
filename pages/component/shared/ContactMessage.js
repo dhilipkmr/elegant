@@ -74,9 +74,9 @@ export default function ContactMessage() {
 			</div>
 			<div className="md:flex md:items-center">
 				<div className="md:w-1/3 flex items-center">
-					<button className="btn btn-theme p-3 px-6 uppercase quicks flex flex-row items-center" type="button" onClick={handleSendMessageClick}>
-						<span className="whitespace-no-wrap sm:text-xl">Send Message</span>
-						<BiSend className="ml-2 text-2xl" />
+					<button className="buttonfx slideleft rounded p-3 px-6 uppercase quicks flex items-center block whitespace-no-wrap" type="button" onClick={handleSendMessageClick}>
+						<span className="whitespace-no-wrap sm:text-xl z-1">Send Message</span>
+						<BiSend className="ml-2 text-2xl z-1" />
 					</button>
 				</div>
 				{loading ? <RiLoader4Line className="rotate ml-3 text-3xl text-gray-600" /> : null}

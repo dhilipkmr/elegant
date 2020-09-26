@@ -30,7 +30,7 @@ function BlurImage(props) {
 	
 
 	return (
-		<img load="lazy" src={imgUrl} className={className + lazyClass} style={{ ...style, transition: 'all 600ms' }} onLoad={handleLoad} ref={imgRef}/>
+		<img load="lazy" src={imgUrl} className={className + lazyClass} style={{ ...style, transition: 'all 300ms' }} onLoad={handleLoad} ref={imgRef}/>
 	)
 }
 

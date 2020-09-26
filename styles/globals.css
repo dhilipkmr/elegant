@@ -88,7 +88,7 @@
   height: 3px;
   bottom: 0;
   left: 0;
-  background: var(--main-theme-dark);
+  background: #4a5567;
   visibility: hidden;
   border-radius: 5px;
   transform: scaleX(0);
@@ -137,4 +137,64 @@
 
 .blur {
   filter: blur(10px);
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.buttonfx{
+    color: #FFF;
+    outline: none;
+    border: 2px solid #4a5567;
+    background: #4a5567;
+    letter-spacing: 0.0625em;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+/* //// Default effect: Slide from Top  //// */
+
+.buttonfx:before,
+.buttonfx:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: #FFF; /* onhover background color */
+  z-index: 0;
+  transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
+  transition: all .5s;
+}
+
+.buttonfx:before{
+  background: #4a5567; /* button default background color */
+  z-index: 0;
+  transform: translate3D(0,0,0);
+}
+
+.buttonfx:hover{
+  color: #4a5567;
+}
+
+.buttonfx:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+
+.slideleft:after{
+  top: 0;
+  z-index: 0;
+  transform: translate3D(-101%,0,0);
+}
+
+.slideleft:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .5s;
 }
