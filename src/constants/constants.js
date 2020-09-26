@@ -46,6 +46,7 @@ export const testimonialsList = new Array(10).fill(1).map(() => {
 });
 
 
+
 // Gallery 
 const IMG_LIST = ['f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'f10', 'f11', 'f111', 'f12', 'f13', 'f14', 'f15',
 'f16', 'f17', 'f18', 'f19', 'f20'];
