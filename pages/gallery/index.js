@@ -18,15 +18,15 @@ function Gallery({ Component, pageProps }) {
 
 	return (
 		<Fragment>
-			<div className="pb-0 md:pb-20 mx-5 lg:mx-20 xl:mx-32">
+			<div className="pb-0 md:pb-20 mx-5 lg:mx-20 xl:mx-32 bg-white my-4 pt-5">
 				<div className="pt-2 pb-8 md:pb-20 md:pt-12 text-4xl sm:text-5xl quicks font-extrabold text-center text-gray-800">{GALLERY_HEADING}</div>
 				<div className="flex flex-wrap justify-center">
 					{
 						GALLERY_IMAGES_LIST.map((item, index) => {
 							const { url1 } = item;
 							return (
-								<div key={index} className="w-full px-5 sm:w-1/2 lg:w-1/3 lg:px-8 leading-10">
-									<div className="mx-auto my-5 galleryImageWrap overshadow" onClick={() => handleImageClick(index)}>
+								<div key={index} className="w-full sm:w-1/2 lg:w-1/3 leading-10">
+									<div className="mx-auto my-5 mx-5 galleryImageWrap overshadow" onClick={() => handleImageClick(index)}>
 										<div className="overlay"></div>
 										<BlurImage src={url1} className="galleryImage"/>
 									</div>

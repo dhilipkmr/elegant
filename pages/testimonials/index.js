@@ -5,7 +5,7 @@ import { GALLERY_REDIRECT, GET_QUOTE_REDIRECT } from '../../src/constants/consta
 
 function Testimonials() {
 	return (
-		<div className="testimonial homeTestimonalBg">
+		<div className="testimonial homeTestimonalBg pt-10">
 			<div className="pb-20 sm:pb-5 pt-12 text-4xl sm:text-5xl quicks font-extrabold text-center text-gray-800">{TESTIMONY_HEADING}</div>
 			<div className="pt-10 p-3 md:p-20 md:pt-5 w-full">
 				<div className="">

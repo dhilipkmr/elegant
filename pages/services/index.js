@@ -4,7 +4,7 @@ import BlurImage from '../../src/components/BlurImage';
 function Services({ Component, pageProps }) {
 	return (
 		<div className="pb-0 md:pb-20 mx-5 lg:mx-20 xl:mx-32">
-			<div className="pt-2 pb-8 md:pb-20 md:pt-12 text-4xl sm:text-5xl quicks font-extrabold text-center text-gray-800">{SERVICES_HEADING}</div>
+			<div className="pt-12 pb-8 md:pb-20 md:pt-20 text-4xl sm:text-5xl quicks font-extrabold text-center text-gray-800">{SERVICES_HEADING}</div>
 			{
 				SERVICES_LIST.map(({ Icon, title, description, imgurl }, index) => {
 					return (
