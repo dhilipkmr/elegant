@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import TestimonialCard from './TestimonialCard';
+import TestimonialCard from '../../../src/components/TestimonialCard';
 import { TESTIMONIALS_LIST } from '../../../src/constants/testimonyConstants';
 import { RiExternalLinkFill } from 'react-icons/ri';
 

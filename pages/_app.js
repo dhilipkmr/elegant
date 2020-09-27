@@ -5,7 +5,7 @@ import Footer from './component/shared/Footer';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
+    <div style={{ background: '#f5faff' }}>
       <Head>
         <meta charSet="utf-8"></meta>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>

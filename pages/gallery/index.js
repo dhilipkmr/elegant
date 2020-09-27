@@ -2,6 +2,8 @@ import { useState, Fragment } from "react";
 import { GALLERY_IMAGES_LIST, GALLERY_HEADING } from '../../src/constants/galleryConstants';
 import BlurImage from '../../src/components/BlurImage';
 import Modal from '../../src/components/modal';
+import Link from 'next/link';
+import { GET_QUOTE_REDIRECT, TESTIMONY_REDIRECT } from '../../src/constants/constants';
 
 function Gallery({ Component, pageProps }) {
 	const [modalImgIndex, setModalImgIndex] = useState(-1);
@@ -32,6 +34,22 @@ function Gallery({ Component, pageProps }) {
 							)
 						})
 					}
+				</div>
+				<div class="text-center text-xl flex flex-col justify-center items-center my-10">
+					<Link href="/testimonials">
+						<a className="my-5">
+							<button className="buttonfx slideleft rounded-full p-3 px-6 quicks flex items-center block whitespace-no-wrap" type="button">
+								<span className="whitespace-no-wrap sm:text-xl z-1">{TESTIMONY_REDIRECT}</span>
+							</button>
+						</a>
+					</Link>
+					<Link href="/get-quote">
+						<a className="my-5">
+							<button className="buttonfx slideleft rounded-full p-3 px-6 quicks flex items-center block whitespace-no-wrap" type="button">
+								<span className="whitespace-no-wrap sm:text-xl z-1">{GET_QUOTE_REDIRECT}</span>
+							</button>
+						</a>
+					</Link>
 				</div>
 			</div>
 			{

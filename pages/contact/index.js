@@ -2,6 +2,8 @@ import { Fragment, useState, useEffect } from 'react';
 import Map from '../component/shared/Map';
 import ContactMessage from '../component/shared/ContactMessage';
 import { CONTACT_HEADING, CONTACT_MESSAGE_US, CONTACT_OPTIONS} from '../../src/constants/contactConstants';
+import Link from 'next/link';
+import { GET_QUOTE_REDIRECT } from '../../src/constants/constants';
 
 function Contact() {
 	const [loadMap, setLoadMap] = useState(false);
@@ -39,7 +41,7 @@ function Contact() {
 					{CONTACT_MESSAGE_US}
 				</div>
 				<div className="w-full mt-5 mb-10">
-					<div className="flex flex-col md:flex-row">
+					<div className="flex flex-col md:flex-row bg-white p-10">
 						<ContactMessage />
 						{
 							loadMap ?
@@ -49,6 +51,15 @@ function Contact() {
 								</div>
 						}
 					</div>
+				</div>
+				<div class="text-center text-xl flex flex-col justify-center items-center my-10">
+					<Link href="/get-quote">
+						<a className="my-5">
+							<button className="buttonfx slideleft rounded-full p-3 px-6 quicks flex items-center block whitespace-no-wrap" type="button">
+								<span className="whitespace-no-wrap sm:text-xl z-1">{GET_QUOTE_REDIRECT}</span>
+							</button>
+						</a>
+					</Link>
 				</div>
 			</div>
 		</Fragment>

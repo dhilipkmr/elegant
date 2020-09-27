@@ -6,28 +6,28 @@ import Services from './component/shared/Services';
 import Gallery from './component/shared/Gallery';
 import BlurImage from '../src/components/BlurImage';
 import Map from './component/shared/Map';
-import useIsInViewport from 'use-is-in-viewport'
+// import useIsInViewport from 'use-is-in-viewport'
 import GetQuote from './component/shared/GetQuote';
 
 export default function Home() {
-  const [isInViewport, targetRef] = useIsInViewport({ threshold: 50 });
+  // const [isInViewport, targetRef] = useIsInViewport({ threshold: 50 });
   const [showMap, setShowMap] = useState(false);
 
-  useEffect(() => {
-    if (isInViewport && !showMap) {
-      setShowMap(true);
-    }
-  }, [isInViewport]);
+  // useEffect(() => {
+  //   if (isInViewport && !showMap) {
+  //     setShowMap(true);
+  //   }
+  // }, [isInViewport]);
 
   return (
     <Fragment>
-      <div>
+      <div className="bg-white">
         <img src1='/images/1-blur.jpg' src='/images/2.jpg' style={{ width: '100vw', height: '90vh', objectFit: 'cover' }} />
         <Services />
         <Gallery/>
         <Testimonials />
         <GetQuote/>
-        <div ref={targetRef}>
+        <div>
           <div className="py-10 text-3xl sm:text-5xl quicks font-extrabold text-center text-gray-800">
             Contact us
 			    </div>

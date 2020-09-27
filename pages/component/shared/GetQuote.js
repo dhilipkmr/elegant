@@ -86,7 +86,7 @@ export default function GetQuote() {
 			<div className="pb-5 pt-16 text-3xl sm:text-5xl quicks font-extrabold text-center text-gray-800">
 				{QUOTE_HEADING}
 			</div>
-			<form className="m-4 p-3 md:p-10 bg-white md:text-xl md:px-32">
+			<form className="m-4 p-10 bg-white md:text-xl md:px-32">
 				<div className="flex flex-col md:flex-row">
 					<div className="w-full md:w-1/2 md:pr-12 my-6">
 						<label className="quicks block uppercase tracking-wide text-gray-700 font-bold mb-2 sm:text-xl" htmlFor="cus_name">Name <span className="text-pink-700">*</span></label>

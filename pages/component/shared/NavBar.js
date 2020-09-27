@@ -16,7 +16,7 @@ function NavBar() {
 
 	const activePage = (typeof location !== 'undefined' && didMount) ? location.pathname : '';
 	return (
-		<nav id="header" className="w-full z-30 top-0 py-0" key={activePage}>
+		<nav id="header" className="bg-white w-full z-30 top-0 py-0 shadow-sm" key={activePage}>
 			<div className="w-full mx-auto flex flex-wrap items-center justify-between mt-0 px-10 sm:px-20 py-4 md:py-8">
 				<div className="order-1 lg:order-2 flex items-center" id="nav-content">
 					<label htmlFor="menu-toggle" className="cursor-pointer block lg:hidden">

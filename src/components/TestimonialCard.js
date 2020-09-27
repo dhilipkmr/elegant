@@ -1,4 +1,5 @@
 import { FaQuoteLeft } from 'react-icons/fa';
+import BlurImage from './BlurImage';
 
 function TestimonialCard(props) {
 	const { data = {} } = props || {};
@@ -9,7 +10,7 @@ function TestimonialCard(props) {
 				<div className="flex flex-end">
 				<div className="testimonialCard relative">
 					<div className="dummyImgBrdr">
-						<img loading="lazy" src={imgUrl}/>
+						<BlurImage src={imgUrl}/>
 					</div>
 					<FaQuoteLeft className="quote"/>
 						<div className="bg-white leading-10 text-lg sm:text-xl py-10">
