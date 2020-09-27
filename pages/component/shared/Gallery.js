@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { RiExternalLinkFill } from 'react-icons/ri';
-import BlurImage from '../shared/BlurImage';
+// import BlurImage from '../../../src/components/BlurImage';
 
 const IMAGES = ['/images/F2.jpg', '/images/F1.jpg', '/images/F3.jpg'];
 function Gallery() {

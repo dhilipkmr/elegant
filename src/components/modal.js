@@ -1,4 +1,3 @@
-import BlurImage from './BlurImage';
 import { useEffect, useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { AiOutlineInfoCircle } from 'react-icons/ai';
@@ -44,9 +43,8 @@ function Modal(props) {
 		}
 	}, []);
 
-	const { url1, url2, url3 } = list[imgIndex] || {};
-	const src1 = url2 || url1;
-	const src2 = url3 || url2;
+	const { url2 } = list[imgIndex] || {};
+
 	return (
 		<div className="fixed z-10 inset-0 overflow-y-auto">
 			<div className="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
@@ -66,7 +64,9 @@ function Modal(props) {
 						<div className="bg-white p-3" style={{ minHeight: '50vh' }}>
 							<div className="sm:flex sm:items-start">
 								{/* <BlurImage key={src1} src1={src1} src2={src2} /> */}
-								<img src={src2} onLoad={() => console.log('loaded')}/>
+								<img src={url2} onLoad={() => console.log('loaded')} />
+								{/* <img src={require(`../../public${src2}?lqip`)} /> */}
+								{/* <img src={require(`../../public${src2}?original`)} /> */}
 							</div>
 						</div>
 					</div>

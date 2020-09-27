@@ -1,7 +1,7 @@
 import { useState, Fragment } from "react";
 import { GALLERY_IMAGES_LIST, GALLERY_HEADING } from '../../src/constants/galleryConstants';
-import BlurImage from '../component/shared/BlurImage';
-import Modal from '../component/shared/modal';
+import BlurImage from '../../src/components/BlurImage';
+import Modal from '../../src/components/modal';
 
 function Gallery({ Component, pageProps }) {
 	const [modalImgIndex, setModalImgIndex] = useState(-1);
@@ -21,12 +21,12 @@ function Gallery({ Component, pageProps }) {
 				<div className="flex flex-wrap justify-center">
 					{
 						GALLERY_IMAGES_LIST.map((item, index) => {
-							const { url1, url2 } = item;
+							const { url1 } = item;
 							return (
 								<div key={index} className="w-full px-5 sm:w-1/2 lg:w-1/3 lg:px-8 leading-10">
 									<div className="mx-auto my-5 galleryImageWrap overshadow" onClick={() => handleImageClick(index)}>
 										<div className="overlay"></div>
-										<BlurImage src1={url1 || url2} src2={url2} className="galleryImage"/>
+										<BlurImage src={url1} className="galleryImage"/>
 									</div>
 								</div>
 							)

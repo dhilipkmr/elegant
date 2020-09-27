@@ -20,6 +20,10 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "autoprefixer": "^10.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "lqip-loader": "^2.2.1",
+    "next-compose-plugins": "^2.2.0",
+    "next-optimized-images": "^2.6.2",
     "postcss-preset-env": "^6.7.0",
     "sass": "^1.26.11"
   }

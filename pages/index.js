@@ -4,7 +4,7 @@ import Testimonials from './component/Home/Testimonials';
 import ContactMessage from './component/shared/ContactMessage';
 import Services from './component/shared/Services';
 import Gallery from './component/shared/Gallery';
-import BlurImage from './component/shared/BlurImage';
+import BlurImage from '../src/components/BlurImage';
 import Map from './component/shared/Map';
 import useIsInViewport from 'use-is-in-viewport'
 import GetQuote from './component/shared/GetQuote';
@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <Fragment>
       <div>
-        <BlurImage src1='/images/1-blur.jpg' src2='/images/2.jpg' style={{ width: '100vw', height: '90vh', objectFit: 'cover' }} />
+        <img src1='/images/1-blur.jpg' src='/images/2.jpg' style={{ width: '100vw', height: '90vh', objectFit: 'cover' }} />
         <Services />
         <Gallery/>
         <Testimonials />
