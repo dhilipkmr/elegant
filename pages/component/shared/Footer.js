@@ -73,31 +73,31 @@ function Footer() {
 								{/* <li className="mr-3 footer-icon">
 									<a target="_blank" href="tel:555-555-5555">
 										<FiPhone className="inline-block mr-3" />
-										<span class="text-lg sm:text-xl">contactus@mselegant.in</span>
+										<span className="text-lg sm:text-xl">contactus@mselegant.in</span>
 									</a>
 								</li> */}
 								<li className="mr-3 footer-icon">
 									<a target="_blank" href="mailto:name@email.com">
 										<GoMail className="inline-block mr-3" />
-										<span class="text-lg sm:text-xl">contactus@mselegant.in</span>
+										<span className="text-lg sm:text-xl">contactus@mselegant.in</span>
 									</a>
 								</li>
 								<li className="mr-3 footer-icon">
 									<a target="_blank" href="https://www.instagram.com">
 										<FaInstagram className="inline-block mr-3" />
-										<span class="text-lg sm:text-xl">@mselegant</span>
+										<span className="text-lg sm:text-xl">@mselegant</span>
 									</a>
 								</li>
 								<li className="mr-3 footer-icon">
 									<a target="_blank" href="https://www.facebook.com">
 										<FiFacebook className="white inline-block mr-3" />
-										<span class="text-lg sm:text-xl">@mselegant</span>
+										<span className="text-lg sm:text-xl">@mselegant</span>
 									</a>
 								</li>
 								<li className="mr-3 footer-icon">
 									<a target="_blank" href="https://www.whatsapp.com">
 										<FaWhatsapp className="inline-block mr-3" />
-										<span class="text-lg sm:text-xl">@99999-99999</span>
+										<span className="text-lg sm:text-xl">@99999-99999</span>
 									</a>
 								</li>
 							</ul>

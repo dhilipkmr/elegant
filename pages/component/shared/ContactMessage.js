@@ -1,11 +1,9 @@
 import { BiSend } from 'react-icons/bi';
 import { useState, useRef } from 'react';
 import { RiEmotionLine, RiLoader4Line } from 'react-icons/ri';
-import Link from 'next/link';
 import Error from './Error';
 import Success from './Success';
-
-const MSG_API = 'https://ihqtv3dj46.execute-api.us-east-1.amazonaws.com/dev/nodemailer';
+import { CONTACT_QUOTE_API } from '../../../src/constants/constants';
 
 export default function ContactMessage() {
 	const userContactRef = useRef(null);
@@ -25,7 +23,7 @@ export default function ContactMessage() {
 		const message = msgRef.current.value;
 		if (message && email) {
 			setLoading(true);
-			fetch(MSG_API, {
+			fetch(CONTACT_QUOTE_API, {
 				method: 'POST',
 				body: JSON.stringify({
 					message, email
@@ -48,10 +46,9 @@ export default function ContactMessage() {
 		} else {
 			setLoading(false);
 			setStatus('ERROR');
-			setErrorMsg('Please enter valid Email/Phone No. and Message!');
+			setErrorMsg('Please enter a valid Contact and a Message!');
 		}
 	}
-
 
 	return (
 		<form className="w-full mb-10 md:mr-10 md:max-w-3xl">

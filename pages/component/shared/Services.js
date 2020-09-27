@@ -7,13 +7,13 @@ const LIST = new Array(6).fill({
 })
 function Services() {
 	return (
-		<div class="pb-20 lg:pb-40 px-3 sm:px-10 ">
+		<div className="pb-20 lg:pb-40 px-3 sm:px-10 ">
 			<div className="pb-10 py-20 text-3xl sm:text-5xl quicks font-extrabold text-center text-gray-800">Our Offerings</div>
-			<div class="flex flex-wrap justify-center">
+			<div className="flex flex-wrap justify-center">
 					{
-						LIST.map(({ Icon, heading, subTxt}) => {
+						LIST.map(({ Icon, heading, subTxt}, index) => {
 							return (
-								<div class="w-full px-5 sm:w-1/2 lg:w-1/3 lg:px-20 leading-10">
+								<div key={index} className="w-full px-5 sm:w-1/2 lg:w-1/3 lg:px-20 leading-10">
 									<div className="flex flex-col items-center py-5 sm:py-20">
 										<div className="text-5xl sm:text-6xl"><Icon className="theme-dark-color"/></div>
 										<div className="text-2xl sm:text-3xl py-3 quicks">{heading}</div>

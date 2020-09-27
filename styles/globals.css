@@ -40,7 +40,8 @@
 }
 
 .navMenu-show {
-  height: 188px !important;
+  height: 220px !important;
+  padding: 5px 0px;
 }
 
 .footer_border {
