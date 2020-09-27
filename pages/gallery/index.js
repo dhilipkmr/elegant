@@ -23,7 +23,7 @@ function Gallery({ Component, pageProps }) {
 						GALLERY_IMAGES_LIST.map((item, index) => {
 							const { url1, url2 } = item;
 							return (
-								<div className="w-full px-5 sm:w-1/2 lg:w-1/3 lg:px-8 leading-10">
+								<div key={index} className="w-full px-5 sm:w-1/2 lg:w-1/3 lg:px-8 leading-10">
 									<div className="mx-auto my-5 galleryImageWrap overshadow" onClick={() => handleImageClick(index)}>
 										<div className="overlay"></div>
 										<BlurImage src1={url1 || url2} src2={url2} className="galleryImage"/>

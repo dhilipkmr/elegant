@@ -62,10 +62,12 @@ function Modal(props) {
 					aria-labelledby="modal-headline"
 					style={{ marginBottom: '10vh'}}
 				>
-					<div className="bg-white p-3">
-						<div className="sm:flex sm:items-start">
-							{/* <BlurImage key={src1} src1={src1} src2={src2} /> */}
-							<img src={src2}/>
+					<div className="">
+						<div className="bg-white p-3" style={{ minHeight: '50vh' }}>
+							<div className="sm:flex sm:items-start">
+								{/* <BlurImage key={src1} src1={src1} src2={src2} /> */}
+								<img src={src2} onLoad={() => console.log('loaded')}/>
+							</div>
 						</div>
 					</div>
 				</div>
