@@ -6,7 +6,7 @@ import {
 	Marker
 } from "react-google-maps";
 
-const defaultCenter = { lat: 11.025259, lng: 77.002158 };
+const defaultCenter = { lat: 11.003953, lng: 76.953658 };
 
 const defaultOptions = { scrollwheel: false };
 
@@ -30,7 +30,7 @@ export default function GoogleMaps({className = ''}) {
 		<RegularMap
 			googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU4AWLJljj5kyjJDobc1zZi_HiwqKsCxY"
 			loadingElement={<div className="mapBg" style={loadingElementStyle} />}
-			containerElement={<div className={className} />}
+			containerElement={<div className={className} id="map" />}
 			mapElement={<div style={mapElementStyle} />}
 		/>
 	);

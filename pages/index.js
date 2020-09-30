@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <Fragment>
       <div className="bg-white">
-        <img src1='/images/1-blur.jpg' src='/images/2.jpg' style={{ width: '100vw', height: '90vh', objectFit: 'cover' }} />
+        <BlurImage src='/images/2.jpg' style={{ width: '100vw', height: '90vh', objectFit: 'cover' }} />
         <Services />
         <Gallery/>
         <Testimonials />

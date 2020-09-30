@@ -27,7 +27,7 @@ function Contact() {
 								CONTACT_OPTIONS.map((option) => {
 									const { Icon, url, text } = option;
 									return (
-										<div className="w-full lg:w-1/2 my-5 lg:inline-block whitespace-no-wrap">
+										<div className="w-full lg:w-1/2 my-5 lg:inline-block sm:whitespace-no-wrap max-w-xs sm:max-w-none">
 											<a className="contact-icon" href={url} target="_blank">
 												<Icon className="inline-block mr-4" />
 												<span className="text-xl">{text}</span>

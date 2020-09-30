@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef, Fragment } from 'react';
 
 function BlurImage(props) {
-	const { src, className = '', style = {} } = props;
+	const { src, className = '', style = {}, noTrans = true } = props;
 	const lowQuality = require(`../../public${src}?lqip`);
 	const originalImg = require(`../../public${src}?original`);
 	const [imgUrl, setImgUrl] = useState(lowQuality);
@@ -28,9 +28,10 @@ function BlurImage(props) {
 		}
 	}, []);
 	
+	const trans = noTrans ? {} : { transition: 'all 300ms' };
 	return (
 		<Fragment>
-			<img className={className + lazyClass} src={imgUrl} style={{ ...style, transition: 'all 300ms' }} onLoad={handleLoad} ref={imgRef}/>
+			<img className={className + lazyClass} src={imgUrl} style={{ ...style, ...trans }} onLoad={handleLoad} ref={imgRef}/>
 		</Fragment>
 	)
 }
