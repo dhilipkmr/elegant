@@ -22,7 +22,14 @@ export default function Home() {
   return (
     <Fragment>
       <div className="bg-white">
-        <BlurImage src='/images/2.jpg' style={{ width: '100vw', height: '90vh', objectFit: 'cover' }} />
+        <div class="flex flex-between mt-1 items-center" style={{ background: '#fbddb6' }}>
+          <div class="hidden md:block px-32 mx-auto text-left leading10 flex justify-center flex-col text-gray-800">
+            <div class="text-6xl quicks ">Ms.Elegant</div>
+            <div class="text-5xl quicks mt-10">A Professional Makeup Artist in Coimbatore </div>
+            <div class="text-2xl quicks mt-16">We offer Professional Makeup services to all its client with 100% Satisfaction. Contact us to look Glorious on your Special Day!</div>
+          </div>
+          <BlurImage src='/images/2.jpg' className="homeImg" />
+        </div>
         <Services />
         <Gallery/>
         <Testimonials />

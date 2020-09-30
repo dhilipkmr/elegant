@@ -57,8 +57,13 @@ function NavBar() {
 				</div>
 				<div className="order-2 lg:order-1">
 					<Link href="/">
-						<a>
+						<a className="hidden md:block">
 							<BlurImage src="/images/logo.jpg" style={{ height: "65px" }} noTrans={true}/>
+						</a>
+					</Link>
+					<Link href="/">
+						<a className="block md:hidden">
+							<BlurImage src="/images/logo.jpg" style={{ height: "65px" }} noTrans={true} />
 						</a>
 					</Link>
 				</div>

@@ -5,7 +5,7 @@ import { GALLERY_IMAGES_LIST_HOME } from '../../../src/constants/galleryConstant
 
 function Gallery() {
 	return (
-		<div className="pb-24" style={{ background: '#545454' }}>
+		<div className="pb-24" style={{ background: 'rgb(167 167 167)' }}>
 			<div className="pb-10 py-20 text-3xl sm:text-5xl quicks font-extrabold text-center text-white">Our Gallery</div>
 			<div className="flex flex-wrap justify-center">
 				{

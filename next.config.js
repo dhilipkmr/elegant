@@ -6,7 +6,7 @@ module.exports = withPlugins([
 		/* config for next-optimized-images */
 		imagesFolder: 'images',
 		imagesName: '[name]-[hash].[ext]',
-		handleImages: ['jpg'],
+		handleImages: ['jpg', 'png'],
 		optimizeImages: true,
 		optimizeImagesInDev: false,
 		mozjpeg: {
