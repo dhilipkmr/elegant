@@ -12,6 +12,10 @@
   font-size: 11px;
 }
 
+img {
+  max-width: none;
+}
+
 .theme-dark-color {
   color: var(--main-theme-dark);
 }

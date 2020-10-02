@@ -35,7 +35,7 @@ function Gallery({ Component, pageProps }) {
 						})
 					}
 				</div>
-				<div class="text-center text-xl flex flex-col justify-center items-center my-10">
+				<div className="text-center text-xl flex flex-col justify-center items-center my-10">
 					<Link href="/testimonials">
 						<a className="my-5">
 							<button className="buttonfx slideleft rounded-full p-3 px-6 quicks flex items-center block whitespace-no-wrap" type="button">

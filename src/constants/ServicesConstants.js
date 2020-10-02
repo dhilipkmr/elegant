@@ -28,3 +28,22 @@ export const SERVICES_LIST = [
 		imgurl: "/images/galleryhq/f15.jpg"
 	}
 ];
+
+export const HOME_PAGE_SERVICES_LIST = [
+	{
+		imgurl: "/images/galleryhq/f2.jpg",
+		title: 'Bridal Makeup'
+	},
+	{
+		imgurl: "/images/galleryhq/f3.jpg",
+		title: 'Celebrity Makeup'
+	},
+	{
+		imgurl: "/images/galleryhq/f4.jpg",
+		title: 'Glam Makeup'
+	},
+	{
+		imgurl: "/images/galleryhq/f15.jpg",
+		title: 'Party Makeup'
+	}
+];

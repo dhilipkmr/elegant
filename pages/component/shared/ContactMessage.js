@@ -84,7 +84,7 @@ export default function ContactMessage() {
 					status === 'SUCCESS' ?
 						<Success>
 							<p className="font-bold quicks">We have received your message! <RiEmotionLine className="inline-block ml-1" /></p>
-							<p className="text-sm">Rest assured, we will contact you shortly.</p>
+							<p className="text-sm">We will contact you shortly.</p>
 						</Success> :
 						null
 				}

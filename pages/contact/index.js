@@ -55,7 +55,7 @@ function Contact() {
 							}
 						</div>
 					</div>
-					<div class="text-center text-xl flex flex-col justify-center items-center my-10 pb-20">
+					<div className="text-center text-xl flex flex-col justify-center items-center my-10 pb-20">
 						<Link href="/get-quote">
 							<a className="my-5">
 								<button className="buttonfx slideleft rounded-full p-3 px-6 quicks flex items-center block whitespace-no-wrap" type="button">

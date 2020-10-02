@@ -22,13 +22,15 @@ export default function Home() {
   return (
     <Fragment>
       <div className="bg-white">
-        <div class="flex flex-between mt-1 items-center" style={{ background: '#fbddb6' }}>
-          <div class="hidden md:block px-32 mx-auto text-left leading10 flex justify-center flex-col text-gray-800">
-            <div class="text-6xl quicks ">Ms.Elegant</div>
-            <div class="text-5xl quicks mt-10">A Professional Makeup Artist in Coimbatore </div>
-            <div class="text-2xl quicks mt-16">We offer Professional Makeup services to all its client with 100% Satisfaction. Contact us to look Glorious on your Special Day!</div>
+        <div className="mt-0 md:mt-1 w-full items-center flex flex-row" style={{ background: '#fbddb6' }}>
+          <div className="hidden md:inline-block w-1/2 px-32 mx-auto text-left leading10 flex justify-center flex-col text-gray-800">
+            <div className="flex flex-col align-center">
+              <div className="text-6xl quicks ">Ms.Elegant</div>
+              <div className="text-5xl quicks mt-10">A Professional Makeup Artist in Coimbatore </div>
+              <div className="text-2xl quicks mt-16">We offer Professional Makeup services to all its client with 100% Satisfaction. Contact us to look Glorious on your Special Day!</div>
+            </div>
           </div>
-          <BlurImage src='/images/2.jpg' className="homeImg" />
+          <BlurImage src='/images/2.jpg' className="inline-block homeImg w-full md:w-1/2" />
         </div>
         <Services />
         <Gallery/>
@@ -38,7 +40,7 @@ export default function Home() {
           <div className="py-10 text-3xl sm:text-5xl quicks font-extrabold text-center text-gray-800">
             Contact us
 			    </div>
-          <div className="w-full p-5 pb-10 md:pb-20 md:px-32 md:mx-2">
+          <div className="w-full p-10 pb-10 md:pb-20 md:px-32 md:mx-2">
             <div className="flex flex-col md:flex-row">
               <ContactMessage />
               {/* {showMap ? <Map className="w-full h-64 md:h-auto mapBg rounded" /> : <div className="w-full mapBg rounded"/>} */}

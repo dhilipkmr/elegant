@@ -19,7 +19,7 @@ function Testimonials() {
 						})
 					}
 				</div>
-				<div class="text-center text-xl flex flex-col justify-center items-center mb-10 sm:my-10">
+				<div className="text-center text-xl flex flex-col justify-center items-center mb-10 sm:my-10">
 					<Link href="/gallery">
 						<a className="mb-5 sm:my-5">
 							<button className="buttonfx slideleft rounded-full p-3 px-6 quicks flex items-center block whitespace-no-wrap" type="button">
