@@ -72,7 +72,7 @@ function Modal(props) {
 				</div>
 				<IoMdClose className="sm:hidden fixed z-10 left-0 mt-3 text-white text-5xl mx-5 cursor-pointer hover:text-yellow-600" onClick={closeModal} style={{ top: '6px' }} />
 				<div className="inline-block galleryBigImg mt-12">
-					<Slider list={sliderList} className="galleryBigImg"/>
+					<Slider list={sliderList} className="galleryBigImg inline-block"/>
 				</div>
 			</div>
 		</div>

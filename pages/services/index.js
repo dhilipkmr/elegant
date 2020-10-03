@@ -33,7 +33,7 @@ function Services({ Component, pageProps }) {
 								</div>
 							</div>
 							<div className="w-full md:w-1/2">
-								<Slider list={list}/>
+								<Slider list={list} style={{ width: '100%', height: '500px', objectFit: 'cover' }}/>
 							</div>
 						</div>
 					)
