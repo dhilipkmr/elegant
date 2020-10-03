@@ -20,10 +20,10 @@ function AboutMe({ Component, pageProps }) {
 	return (
 		<Fragment>
 			<div className="p-10 md:p-56 bg-white mt-1">
-				<div className="md:w-1/3 inline-block mx-auto my-10 flex justify-center">
+				<div className="w-full md:w-1/3 flex md:inline-block justify-center my-10">
 					<BlurImage src={PHOTO} className="rounded" style={{ width: '200px', height: '200px', objectFit: 'cover', borderRadius: '50%' }} />
 				</div>
-				<div className="text-xl leading-10 w-full md:w-2/3 inline-block my-10">
+				<div className="text-xl leading-10 w-full md:w-2/3 my-10 inline-block">
 					<div className="text-6xl py-12 quicks" style={{ lineHeight: 1.2 }}>{ABOUTME_HEADING}</div>
 					{DESCRIPTION}
 				</div>
