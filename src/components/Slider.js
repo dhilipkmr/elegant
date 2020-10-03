@@ -24,14 +24,14 @@ const responsive = {
 
 export default class Slider extends Component {
 	render() {
-		const { list = [] } = this.props;
+		const { list = [], style = {}, className = '' } = this.props;
 		return (
 			<Carousel responsive={responsive} infinite arrows draggable keyBoardControl minimumTouchDrag={80} renderButtonGroupOutside={false}
 				renderDotsOutside={false}>
 				{
 					list.map((imgUrl, index) => {
 						return (
-							<BlurImage key={index} src={imgUrl} className="rounded" style={{ width: '100%', height: '500px', objectFit: 'cover' }} />
+							<BlurImage key={index} src={imgUrl} className={`rounded inline-block ${className}`} style={{ width: '100%', height: '500px', objectFit: 'cover' }} style={style} />
 						)
 					})
 				}

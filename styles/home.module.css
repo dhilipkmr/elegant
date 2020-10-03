@@ -74,6 +74,10 @@
   transform: scale(1.3);
 }
 
+.galleryBigImg {
+  width: 400px;
+}
+
 @screen xs {
   .testimonialCard {
     padding: 40px 20px;
@@ -96,6 +100,9 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+  }
+  .galleryBigImg {
+    width: 400px;
   }
 }
 
@@ -129,6 +136,9 @@
     width: 50vw;
     height: 90vh;
     object-fit: cover;
+  }
+  .galleryBigImg {
+    width: 560px;
   }
 }
 
