@@ -91,7 +91,7 @@ function Modal(props) {
 					</div>
 				</div>
 			</div>
-			<div className="fixed bottom-0 left-0 right-0" style={{ top: '85vh', zIndex: 2 }}>
+			<div className="fixed bottom-0 left-0 right-0" style={{ top: '80vh', zIndex: 2 }}>
 				<div className="relative">
 					<div className="relative sm:static md:relative text-center pt-2" style={{ top: '50px'}}>
 						<FaArrowLeft className=" inline-block text-5xl text-white mx-5 cursor-pointer hover:text-yellow-600" onClick={loadPrev} />
