@@ -2,15 +2,14 @@
 //Nav bar
 export const WEBSITE_NAME = 'MS.ELEGANT';
 export const ROUTES = [
-	// {
-	// 	url: '/about',
-	// 	name: 'About'
-	// },
 	{
 		url: '/',
 		name: 'Home'
 	},
-
+	{
+		url: '/aboutme',
+		name: 'About Me'
+	},
 	{
 		url: '/services',
 		name: 'Services'

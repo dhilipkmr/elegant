@@ -13,7 +13,7 @@ function Services() {
 							return (
 								<div key={index} className="w-full sm:w-1/4 mb-5 md:mb-3">
 									<div className="mx-10 flex flex-col shadow hover:shadow-xl transition-all duration-100">
-										<Link href={`/services#img${index}`}>
+										<Link href={`/services#type${index}`}>
 											<a className="curPoint">
 												<div className="servicesImgWrap text-center mx-auto">
 													<div className="overlay"></div>

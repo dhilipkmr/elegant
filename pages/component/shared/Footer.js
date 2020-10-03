@@ -4,6 +4,8 @@ import { GoMail } from 'react-icons/go';
 import Link from 'next/link';
 import { MdLocationOn } from 'react-icons/md';
 import { INSTA_URL, INSTA_TEXT, FB_TEXT, FB_URL, MAIL_TEXT, MAIL_URL, WHATSAPP_TEXT, WHATSAPP_URL, LOCATION_TXT, LOCATION_URL} from '../../../src/constants/contactConstants';
+import { ROUTES } from '../../../src/constants/constants';
+import { SERVICES_LIST } from '../../../src/constants/ServicesConstants';
 
 
 function Footer() {
@@ -19,31 +21,17 @@ function Footer() {
 							<div className="brdr50"></div>
 								</div>
 								<ul className="mt-5 leading-9 md:text-lg">
-									<li className="footer-icon">
-										<Link href="/about">
-											<a>About Us</a>
-										</Link>
-									</li>
-									<li className="footer-icon">
-										<Link href="/services">
-											<a>Services</a>
-										</Link>
-									</li>
-									<li className="footer-icon">
-										<Link href="/testimonials">
-											<a>Testimony</a>
-										</Link>
-									</li>
-									<li className="footer-icon">
-										<Link href="/gallery">
-											<a>Gallery</a>
-										</Link>
-									</li>
-									<li className="footer-icon">
-										<Link href="/contact">
-											<a>Contact</a>
-										</Link>
-									</li>
+									{
+										ROUTES.map(({ url, name }) => {
+											return (
+												<li className="footer-icon">
+													<Link href={url}>
+														<a>{name}</a>
+													</Link>
+												</li>
+											)
+										})
+									}
 								</ul>
 							</div>
 						</div>
@@ -57,10 +45,17 @@ function Footer() {
 							<div className="brdr50"></div>
 							</div>
 							<ul className="mt-5 leading-9 md:text-lg">
-								<li>Bridal makeup</li>
-								<li>Party makeup</li>
-								<li>Pre Wedding Makeup</li>
-								<li>Post Wedding Makeup</li>
+								{
+									SERVICES_LIST.map(({ title }, index) => {
+										return (
+											<li className="footer-icon">
+												<Link href={`/services#type${index}`}>
+													<a>{title}</a>
+												</Link>
+											</li>
+										)
+									})
+								}
 							</ul>
 						</div>
 					</div>

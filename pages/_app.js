@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import 'react-multi-carousel/lib/styles.css';
 import Head from 'next/head';
 import NavBar from './component/shared/NavBar';
 import Footer from './component/shared/Footer';
