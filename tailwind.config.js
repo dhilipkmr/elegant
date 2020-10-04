@@ -7,7 +7,9 @@ module.exports = {
     './pages/*.js',
     './pages/*/*.js',
     './pages/*/*/*.js',
-    './pages/*/*/*/*.js'
+    './pages/*/*/*/*.js',
+    './src/*.js',
+    './src/*/*.js'
   ],
   theme: {
     extend: {

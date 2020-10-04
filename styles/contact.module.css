@@ -5,3 +5,29 @@
 .contact-icon:hover {
 	color: var(--main-theme-dark);
 }
+
+.wrapper {
+  width: 0px;
+  animation: fullView 0.5s forwards linear;
+}
+
+@keyframes fullView {
+  100% {
+    width: 100%;
+  }
+}
+
+.loadingShimmer {
+	animation : shimmer 1s infinite;
+	background: linear-gradient(to right, #eff1f3 4%, #4a556724 25%, #edf2f7 36%);
+	background-size: 1000px 100%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}

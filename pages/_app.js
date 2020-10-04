@@ -1,14 +1,15 @@
 import '../styles/globals.css';
+import 'react-multi-carousel/lib/styles.css';
 import Head from 'next/head';
 import NavBar from './component/shared/NavBar';
 import Footer from './component/shared/Footer';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
+    <div style={{ background: '#f5faff' }}>
       <Head>
         <meta charSet="utf-8"></meta>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         <meta name="author" content="dhilipkmr"></meta>
         <title>Ms.Elegant | Bridal Makeover, Makeup Artists in Coimbatore</title>

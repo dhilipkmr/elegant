@@ -2,6 +2,11 @@ import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { FiFacebook, FiPhone } from 'react-icons/fi';
 import { GoMail } from 'react-icons/go';
 import Link from 'next/link';
+import { MdLocationOn } from 'react-icons/md';
+import { INSTA_URL, INSTA_TEXT, FB_TEXT, FB_URL, MAIL_TEXT, MAIL_URL, WHATSAPP_TEXT, WHATSAPP_URL, LOCATION_TXT, LOCATION_URL} from '../../../src/constants/contactConstants';
+import { ROUTES } from '../../../src/constants/constants';
+import { SERVICES_LIST } from '../../../src/constants/ServicesConstants';
+
 
 function Footer() {
 	return (
@@ -16,31 +21,17 @@ function Footer() {
 							<div className="brdr50"></div>
 								</div>
 								<ul className="mt-5 leading-9 md:text-lg">
-									<li className="footer-icon">
-										<Link href="/about">
-											<a>About Us</a>
-										</Link>
-									</li>
-									<li className="footer-icon">
-										<Link href="/services">
-											<a>Services</a>
-										</Link>
-									</li>
-									<li className="footer-icon">
-										<Link href="/testimonials">
-											<a>Testimony</a>
-										</Link>
-									</li>
-									<li className="footer-icon">
-										<Link href="/gallery">
-											<a>Gallery</a>
-										</Link>
-									</li>
-									<li className="footer-icon">
-										<Link href="/contact">
-											<a>Contact</a>
-										</Link>
-									</li>
+									{
+										ROUTES.map(({ url, name }) => {
+											return (
+												<li className="footer-icon">
+													<Link href={url}>
+														<a>{name}</a>
+													</Link>
+												</li>
+											)
+										})
+									}
 								</ul>
 							</div>
 						</div>
@@ -54,10 +45,17 @@ function Footer() {
 							<div className="brdr50"></div>
 							</div>
 							<ul className="mt-5 leading-9 md:text-lg">
-								<li>Bridal makeup</li>
-								<li>Party makeup</li>
-								<li>Pre Wedding Makeup</li>
-								<li>Post Wedding Makeup</li>
+								{
+									SERVICES_LIST.map(({ title }, index) => {
+										return (
+											<li className="footer-icon">
+												<Link href={`/services#type${index}`}>
+													<a>{title}</a>
+												</Link>
+											</li>
+										)
+									})
+								}
 							</ul>
 						</div>
 					</div>
@@ -70,34 +68,34 @@ function Footer() {
 							<div className="brdr50"></div>
 							</div>
 							<ul className="mt-5 text-3xl flex flex-wrap flex-col">
-								{/* <li className="mr-3 footer-icon">
-									<a target="_blank" href="tel:555-555-5555">
-										<FiPhone className="inline-block mr-3" />
-										<span class="text-lg sm:text-xl">contactus@mselegant.in</span>
-									</a>
-								</li> */}
 								<li className="mr-3 footer-icon">
-									<a target="_blank" href="mailto:name@email.com">
-										<GoMail className="inline-block mr-3" />
-										<span class="text-lg sm:text-xl">contactus@mselegant.in</span>
-									</a>
-								</li>
-								<li className="mr-3 footer-icon">
-									<a target="_blank" href="https://www.instagram.com">
-										<FaInstagram className="inline-block mr-3" />
-										<span class="text-lg sm:text-xl">@mselegant</span>
-									</a>
-								</li>
-								<li className="mr-3 footer-icon">
-									<a target="_blank" href="https://www.facebook.com">
-										<FiFacebook className="white inline-block mr-3" />
-										<span class="text-lg sm:text-xl">@mselegant</span>
-									</a>
-								</li>
-								<li className="mr-3 footer-icon">
-									<a target="_blank" href="https://www.whatsapp.com">
+									<a target="_blank" href={WHATSAPP_URL}>
 										<FaWhatsapp className="inline-block mr-3" />
-										<span class="text-lg sm:text-xl">@99999-99999</span>
+										<span className="text-lg sm:text-xl">{WHATSAPP_TEXT}</span>
+									</a>
+								</li>
+								<li className="mr-3 footer-icon">
+									<a target="_blank" href={MAIL_URL}>
+										<GoMail className="inline-block mr-3" />
+										<span className="text-lg sm:text-xl">{MAIL_TEXT}</span>
+									</a>
+								</li>
+								<li className="mr-3 footer-icon">
+									<a target="_blank" href={INSTA_URL}>
+										<FaInstagram className="inline-block mr-3" />
+										<span className="text-lg sm:text-xl">{INSTA_TEXT}</span>
+									</a>
+								</li>
+								<li className="mr-3 footer-icon">
+									<a target="_blank" href={FB_URL}>
+										<FiFacebook className="white inline-block mr-3" />
+										<span className="text-lg sm:text-xl">{FB_TEXT}</span>
+									</a>
+								</li>
+								<li className="mr-3 footer-icon max-w-xs">
+									<a target="_blank" href={LOCATION_URL}>
+										<MdLocationOn className="inline-block mr-3" />
+										<span className="text-lg sm:text-xl">{LOCATION_TXT}</span>
 									</a>
 								</li>
 							</ul>

@@ -1,22 +1,20 @@
 import Link from 'next/link';
 import { RiExternalLinkFill } from 'react-icons/ri';
-import BlurImage from '../shared/BlurImage';
+import BlurImage from '../../../src/components/BlurImage';
+import { GALLERY_IMAGES_LIST_HOME } from '../../../src/constants/galleryConstants';
 
-const IMAGES = ['/images/gallery/a.jpg', '/images/gallery/a.jpg', '/images/gallery/a.jpg'];
 function Gallery() {
 	return (
-		<div className="bg-dark-theme pb-24 ">
+		<div className="pb-24" style={{ background: 'rgb(167 167 167)' }}>
 			<div className="pb-10 py-20 text-3xl sm:text-5xl quicks font-extrabold text-center text-white">Our Gallery</div>
-			<div class="flex flex-wrap justify-center">
+			<div className="flex flex-wrap justify-center">
 				{
-					IMAGES.map((url) => {
+					GALLERY_IMAGES_LIST_HOME.map((url) => {
 						return (
-							<div class="mx-auto my-5">
-								<div class="galleryImageWrap text-center mx-auto my-5">
+							<div className="mx-auto my-5">
+								<div className="galleryImageWrap text-center mx-auto my-5">
 									<div className="overlay"></div>
-									<img loading="lazy" src={url} className="galleryImage" width="740" height="560" style={{
-										objectFit: 'cover'
-									}}/>
+									<BlurImage src={url} className="galleryImage"/>
 								</div>
 							</div>
 						)

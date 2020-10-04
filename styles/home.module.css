@@ -1,6 +1,6 @@
 
 .homeTestimonalBg {
-  background: url("/images/bg1.webp") repeat fixed center;
+  background: url("/images/bg1.jpg") repeat fixed center;
 }
 
 .testimonialCard {
@@ -30,13 +30,23 @@
   font-size: 30px;
 }
 
+.servicesImgWrap {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
 .galleryImageWrap {
   cursor: pointer;
   position: relative;
-  border:5px solid white;
+  border: 5px solid white;
   overflow: hidden;
   /* height: 250px; */
   width:350px;
+}
+
+.curPoint {
+  cursor: pointer;
 }
 
 .overshadow {
@@ -49,7 +59,7 @@
   width: 100%;
 }
 
-.galleryImageWrap:hover .overlay {
+.galleryImageWrap:hover .overlay, .servicesImgWrap:hover .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -60,8 +70,12 @@
   z-index: 1;
 }
 
-.galleryImageWrap:hover .galleryImage {
+.galleryImageWrap:hover .galleryImage, .servicesImgWrap:hover .galleryImage {
   transform: scale(1.3);
+}
+
+.galleryBigImg {
+  width: 400px;
 }
 
 @screen xs {
@@ -81,6 +95,14 @@
     top: -115px;
     margin-bottom: 30px;
     height: 85px;
+  }
+  .homeImg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .galleryBigImg {
+    width: 400px;
   }
 }
 
@@ -107,6 +129,16 @@
     top: 25%;
     margin-bottom: auto;
     height: auto;
+  }
+
+  .homeImg {
+    max-width: none;
+    width: 50vw;
+    height: 90vh;
+    object-fit: cover;
+  }
+  .galleryBigImg {
+    width: 560px;
   }
 }
 
